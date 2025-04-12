@@ -207,4 +207,5 @@ sketch
 .history
 .ionide
 
+paperTmp/
 # End of https://www.toptal.com/developers/gitignore/api/react,visualstudiocode,python
