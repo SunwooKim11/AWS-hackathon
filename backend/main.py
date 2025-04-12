@@ -5,6 +5,7 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
+
 app = FastAPI(title="AWS Hackathon Backend", version="1.0.0")
 
 # CORS settings
@@ -28,3 +29,7 @@ app.include_router(recommend.router, prefix="/api/v1")
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the AWS Hackathon Backend!"}
+
+@app.get("/health")
+def health_check():
+    return {"status": "healthy"}
