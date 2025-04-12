@@ -5,6 +5,7 @@ import PyPDF2
 import json
 from pydantic import BaseModel
 from typing import List, Optional
+
 from openai import OpenAI
 from dotenv import load_dotenv
 
@@ -55,6 +56,7 @@ functions = [
         }
     }
 ]
+
 
 def read_pdf(file_path):
     '''Read PDF and return text'''
@@ -122,6 +124,7 @@ def analyze_author(id, prompt=PROMPT, out=tmp_dir, max_download=2):
         summaries.append(summary)
         
         # print(f"분석: {summary}")
+
     
     # 분석이 완료된 후 paperTmp 디렉토리 비우기
     for file in os.listdir(out):

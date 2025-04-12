@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.api.v1.endpoints import user, tool, paper, interest, current_study, recommend
+from api.v1.endpoints import user, tool, paper, interest, current_study, recommend
 
 app = FastAPI(title="AWS Hackathon Backend", version="1.0.0")
 
@@ -25,3 +25,7 @@ app.include_router(recommend.router, prefix="/api/v1")
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the AWS Hackathon Backend!"}
+
+@app.get("/health")
+def health_check():
+    return {"status": "healthy"}
