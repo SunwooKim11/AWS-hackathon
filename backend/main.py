@@ -1,6 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.v1.endpoints import user, tool, paper, interest, current_study, recommend
+from backend.api.v1.endpoints import user, tool, paper, interest, current_study, recommend
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 
 app = FastAPI(title="AWS Hackathon Backend", version="1.0.0")
 

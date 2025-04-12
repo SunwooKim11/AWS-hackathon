@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from ....db.session import SessionLocal
+from ....db.session import get_db
 from ....service.recommender import Recommender
 import os
 from dotenv import load_dotenv

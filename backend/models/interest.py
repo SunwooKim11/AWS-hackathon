@@ -1,12 +1,15 @@
-from sqlalchemy import Column, String, TIMESTAMP, ForeignKey
+from sqlalchemy import Column, String, Text, TIMESTAMP, ForeignKey
 from sqlalchemy.dialects.postgresql import UUID
-from ..db.base import Base
+from sqlalchemy.orm import relationship
+from ..db.base_class import Base  # Import Base directly from base_class
 import uuid
 
 class Interest(Base):
     __tablename__ = "interests"
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    user_id = Column(UUID(as_uuid=True), ForeignKey("users.id"), nullable=False)
+    user_id = Column(String, ForeignKey("users.user_id"), nullable=False)
     keyword = Column(String, nullable=False)
     created_at = Column(TIMESTAMP, nullable=False)
+
+    user = relationship("User", back_populates="interests")
