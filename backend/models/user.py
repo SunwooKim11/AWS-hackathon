@@ -15,6 +15,7 @@ class User(Base):
     google_scholar_id = Column(String, nullable=False)
     profile_image_url = Column(Text, nullable=True)
     created_at = Column(TIMESTAMP, nullable=False)
+    vector_embedding_id = Column(UUID(as_uuid=True), nullable=True)
 
     # Use string references for relationships
     interests = relationship("Interest", back_populates="user")
