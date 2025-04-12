@@ -14,12 +14,12 @@ async def read_user(user_id: str, db: AsyncSession = Depends(get_db)):
         raise HTTPException(status_code=404, detail="User not found")
     return db_user
 
-@router.get("/users/email/{email}")
-async def read_user_by_email(email: str, db: AsyncSession = Depends(get_db)):
-    db_user = await get_user_by_email(db, email)
-    if not db_user:
-        raise HTTPException(status_code=404, detail="User not found")
-    return db_user
+# @router.get("/users/email/{email}")
+# async def read_user_by_email(email: str, db: AsyncSession = Depends(get_db)):
+#     db_user = await get_user_by_email(db, email)
+#     if not db_user:
+#         raise HTTPException(status_code=404, detail="User not found")
+#     return db_user
 
 @router.put("/users/{user_id}", response_model=User)
 async def update_user_profile(user_id: str, user: UserUpdate, db: AsyncSession = Depends(get_db)):

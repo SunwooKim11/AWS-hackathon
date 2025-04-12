@@ -1,8 +1,9 @@
 from pydantic import BaseModel
 from typing import List, Optional
+from datetime import datetime
+from uuid import UUID
 
 class CurrentStudyBase(BaseModel):
-    user_id: str
     title: str
     description: Optional[str] = None
     authors: List[str]
@@ -13,13 +14,17 @@ class CurrentStudyBase(BaseModel):
 class CurrentStudyCreate(CurrentStudyBase):
     pass
 
-class CurrentStudy(CurrentStudyBase):
-    id: str
-    created_at: str
-    updated_at: str
+class CurrentStudyInDB(CurrentStudyBase):
+    user_id: str
+
+class CurrentStudy(CurrentStudyInDB):
+    id: UUID
+    created_at: datetime
+    updated_at: datetime
 
     class Config:
         orm_mode = True
+        from_attributes = True  # For Pydantic v2 compatibility
 
 class CurrentStudyUpdate(BaseModel):
     title: Optional[str] = None
