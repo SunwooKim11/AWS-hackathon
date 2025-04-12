@@ -1,0 +1,2370 @@
+[
+  {
+    "user_id": "user1",
+    "papers": [
+      {
+        "title": "줄기세포 재생 메커니즘",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2023,
+        "journal": "Neuroscience Research",
+        "doi": "10.8093/abc.299",
+        "authors": [
+          "조생명",
+          "장백신",
+          "박세포"
+        ],
+        "equipments": [
+          "형광현미경",
+          "오실로스코프",
+          "원심분리기",
+          "PCR머신"
+        ],
+        "reagents": [
+          "FBS",
+          "트립신",
+          "항체"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "면역세포 활성화와 면역억제 연구",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2025,
+        "journal": "Biochemical Journal",
+        "doi": null,
+        "authors": [
+          "이신경",
+          "홍길동"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "원심분리기",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "프라이머",
+          "사이토카인",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": "vec_d60d4a35"
+      },
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2021,
+        "journal": "Neuroscience Research",
+        "doi": null,
+        "authors": [
+          "윤분자",
+          "홍길동"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "트립신",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user2",
+    "papers": [
+      {
+        "title": "자기포식작용과 질병",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2025,
+        "journal": "Immunology Letters",
+        "doi": null,
+        "authors": [
+          "최분화",
+          "장백신",
+          "박세포"
+        ],
+        "equipments": [
+          "원심분리기",
+          "PCR머신",
+          "유세포분석기",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "FBS",
+          "단백질 키트",
+          "TRIzol"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2025,
+        "journal": "Molecular Therapy",
+        "doi": "10.9951/abc.436",
+        "authors": [
+          "장백신",
+          "이신경",
+          "최분화",
+          "조생명"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "PCR머신",
+          "마이크로매니퓰레이터",
+          "원심분리기"
+        ],
+        "reagents": [
+          "FBS",
+          "단백질 키트",
+          "TRIzol",
+          "MitoTracker"
+        ],
+        "vector_embedding_id": "vec_6e98f355"
+      },
+      {
+        "title": "세포 대사 조절 경로",
+        "abstract": "면역세포 반응 분석",
+        "year": 2021,
+        "journal": "Cell Biology International",
+        "doi": null,
+        "authors": [
+          "이신경",
+          "장백신",
+          "최분화"
+        ],
+        "equipments": [
+          "세포호흡측정기",
+          "형광현미경",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "항체",
+          "사이토카인"
+        ],
+        "vector_embedding_id": "vec_1ba2686d"
+      }
+    ]
+  },
+  {
+    "user_id": "user3",
+    "papers": [
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "면역세포 반응 분석",
+        "year": 2024,
+        "journal": "Immunology Letters",
+        "doi": "10.6910/abc.936",
+        "authors": [
+          "홍길동",
+          "김면역",
+          "조생명"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "마이크로매니퓰레이터",
+          "형광현미경",
+          "패치클램프"
+        ],
+        "reagents": [
+          "프라이머",
+          "TRIzol",
+          "MitoTracker",
+          "FBS"
+        ],
+        "vector_embedding_id": "vec_6d1823e1"
+      },
+      {
+        "title": "산화스트레스 반응 경로",
+        "abstract": "단백질 발현 조절 연구",
+        "year": 2025,
+        "journal": "Immunology Letters",
+        "doi": "10.6738/abc.306",
+        "authors": [
+          "조생명",
+          "윤분자",
+          "이신경",
+          "장백신"
+        ],
+        "equipments": [
+          "형광현미경",
+          "유세포분석기",
+          "패치클램프"
+        ],
+        "reagents": [
+          "사이토카인",
+          "FBS",
+          "항체",
+          "트립신"
+        ],
+        "vector_embedding_id": "vec_0c05d876"
+      },
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2023,
+        "journal": "Molecular Therapy",
+        "doi": null,
+        "authors": [
+          "박세포",
+          "윤분자",
+          "김면역"
+        ],
+        "equipments": [
+          "PCR머신",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "트립신",
+          "항체",
+          "프라이머"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user4",
+    "papers": [
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "면역세포 반응 분석",
+        "year": 2025,
+        "journal": "Cell Biology International",
+        "doi": null,
+        "authors": [
+          "조생명",
+          "박세포",
+          "윤분자",
+          "이신경"
+        ],
+        "equipments": [
+          "PCR머신",
+          "형광현미경",
+          "유세포분석기",
+          "패치클램프"
+        ],
+        "reagents": [
+          "트립신",
+          "FBS"
+        ],
+        "vector_embedding_id": "vec_076882f0"
+      },
+      {
+        "title": "면역세포 활성화와 면역억제 연구",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2020,
+        "journal": "Neuroscience Research",
+        "doi": "10.9027/abc.647",
+        "authors": [
+          "장백신",
+          "김면역",
+          "최분화",
+          "조생명"
+        ],
+        "equipments": [
+          "원심분리기",
+          "세포호흡측정기",
+          "오실로스코프",
+          "유세포분석기"
+        ],
+        "reagents": [
+          "항체",
+          "트립신",
+          "사이토카인",
+          "프라이머"
+        ],
+        "vector_embedding_id": "vec_861ed31c"
+      },
+      {
+        "title": "줄기세포 재생 메커니즘",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2024,
+        "journal": "Molecular Therapy",
+        "doi": null,
+        "authors": [
+          "윤분자",
+          "홍길동",
+          "이신경",
+          "최분화"
+        ],
+        "equipments": [
+          "형광현미경",
+          "세포호흡측정기"
+        ],
+        "reagents": [
+          "DNA 벡터",
+          "FBS",
+          "트립신",
+          "TRIzol"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user5",
+    "papers": [
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2020,
+        "journal": "Molecular Therapy",
+        "doi": null,
+        "authors": [
+          "조생명",
+          "최분화",
+          "장백신",
+          "이신경"
+        ],
+        "equipments": [
+          "패치클램프",
+          "오실로스코프",
+          "형광현미경"
+        ],
+        "reagents": [
+          "프라이머",
+          "TRIzol",
+          "FBS"
+        ],
+        "vector_embedding_id": "vec_6b87e113"
+      },
+      {
+        "title": "세포 대사 조절 경로",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2021,
+        "journal": "Biochemical Journal",
+        "doi": "10.9169/abc.505",
+        "authors": [
+          "조생명",
+          "김면역"
+        ],
+        "equipments": [
+          "형광현미경",
+          "원심분리기"
+        ],
+        "reagents": [
+          "사이토카인",
+          "항체"
+        ],
+        "vector_embedding_id": "vec_413e73d6"
+      },
+      {
+        "title": "세포 대사 조절 경로",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2023,
+        "journal": "Biochemical Journal",
+        "doi": "10.7199/abc.199",
+        "authors": [
+          "박세포",
+          "이신경",
+          "장백신"
+        ],
+        "equipments": [
+          "형광현미경",
+          "PCR머신",
+          "패치클램프",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "프라이머",
+          "FBS",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user6",
+    "papers": [
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2022,
+        "journal": "Immunology Letters",
+        "doi": "10.7924/abc.590",
+        "authors": [
+          "최분화",
+          "장백신"
+        ],
+        "equipments": [
+          "마이크로매니퓰레이터",
+          "원심분리기",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "TRIzol",
+          "단백질 키트"
+        ],
+        "vector_embedding_id": "vec_05deea83"
+      },
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2025,
+        "journal": "Nature Immunology",
+        "doi": null,
+        "authors": [
+          "김면역",
+          "홍길동"
+        ],
+        "equipments": [
+          "세포호흡측정기",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "프라이머",
+          "TRIzol"
+        ],
+        "vector_embedding_id": "vec_1e624b72"
+      },
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "단백질 발현 조절 연구",
+        "year": 2021,
+        "journal": "Molecular Therapy",
+        "doi": "10.9125/abc.504",
+        "authors": [
+          "홍길동",
+          "김면역"
+        ],
+        "equipments": [
+          "PCR머신",
+          "유세포분석기"
+        ],
+        "reagents": [
+          "DNA 벡터",
+          "트립신",
+          "FBS",
+          "사이토카인"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user7",
+    "papers": [
+      {
+        "title": "산화스트레스 반응 경로",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2023,
+        "journal": "Biochemical Journal",
+        "doi": "10.7178/abc.336",
+        "authors": [
+          "박세포",
+          "이신경",
+          "최분화"
+        ],
+        "equipments": [
+          "원심분리기",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "TRIzol",
+          "사이토카인",
+          "항체"
+        ],
+        "vector_embedding_id": "vec_b558fab0"
+      },
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "면역세포 반응 분석",
+        "year": 2020,
+        "journal": "Cell Biology International",
+        "doi": null,
+        "authors": [
+          "박세포",
+          "장백신",
+          "이신경",
+          "조생명"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "마이크로매니퓰레이터",
+          "오실로스코프",
+          "세포호흡측정기"
+        ],
+        "reagents": [
+          "트립신",
+          "사이토카인",
+          "FBS",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": "vec_5e88bcd6"
+      },
+      {
+        "title": "자기포식작용과 질병",
+        "abstract": "면역세포 반응 분석",
+        "year": 2024,
+        "journal": "Cell Biology International",
+        "doi": null,
+        "authors": [
+          "김면역",
+          "윤분자",
+          "최분화"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "PCR머신"
+        ],
+        "reagents": [
+          "프라이머",
+          "트립신",
+          "단백질 키트",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": "vec_e0541d1b"
+      }
+    ]
+  },
+  {
+    "user_id": "user8",
+    "papers": [
+      {
+        "title": "줄기세포 재생 메커니즘",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2025,
+        "journal": "Cell Biology International",
+        "doi": "10.7053/abc.339",
+        "authors": [
+          "윤분자",
+          "장백신",
+          "김면역"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "DNA 벡터",
+          "단백질 키트",
+          "트립신"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2022,
+        "journal": "Neuroscience Research",
+        "doi": "10.5798/abc.376",
+        "authors": [
+          "조생명",
+          "장백신",
+          "홍길동",
+          "윤분자"
+        ],
+        "equipments": [
+          "패치클램프",
+          "마이크로매니퓰레이터",
+          "형광현미경"
+        ],
+        "reagents": [
+          "항체",
+          "단백질 키트",
+          "MitoTracker",
+          "FBS"
+        ],
+        "vector_embedding_id": "vec_60af8e89"
+      },
+      {
+        "title": "면역세포 활성화와 면역억제 연구",
+        "abstract": "면역세포 반응 분석",
+        "year": 2024,
+        "journal": "Nature Immunology",
+        "doi": "10.2533/abc.576",
+        "authors": [
+          "이신경",
+          "윤분자"
+        ],
+        "equipments": [
+          "패치클램프",
+          "유세포분석기",
+          "오실로스코프",
+          "원심분리기"
+        ],
+        "reagents": [
+          "프라이머",
+          "TRIzol",
+          "사이토카인",
+          "항체"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user9",
+    "papers": [
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "단백질 발현 조절 연구",
+        "year": 2024,
+        "journal": "Biochemical Journal",
+        "doi": null,
+        "authors": [
+          "이신경",
+          "최분화"
+        ],
+        "equipments": [
+          "패치클램프",
+          "형광현미경"
+        ],
+        "reagents": [
+          "트립신",
+          "MitoTracker",
+          "사이토카인"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "자기포식작용과 질병",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2023,
+        "journal": "Immunology Letters",
+        "doi": "10.3259/abc.127",
+        "authors": [
+          "홍길동",
+          "장백신",
+          "윤분자",
+          "김면역"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "유세포분석기",
+          "PCR머신",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "항체",
+          "트립신",
+          "FBS",
+          "프라이머"
+        ],
+        "vector_embedding_id": "vec_de469dfc"
+      },
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2020,
+        "journal": "Biochemical Journal",
+        "doi": null,
+        "authors": [
+          "홍길동",
+          "이신경",
+          "장백신",
+          "김면역"
+        ],
+        "equipments": [
+          "PCR머신",
+          "패치클램프",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "단백질 키트",
+          "DNA 벡터",
+          "FBS"
+        ],
+        "vector_embedding_id": "vec_92020aea"
+      }
+    ]
+  },
+  {
+    "user_id": "user10",
+    "papers": [
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2021,
+        "journal": "Biochemical Journal",
+        "doi": "10.3245/abc.592",
+        "authors": [
+          "박세포",
+          "윤분자",
+          "이신경"
+        ],
+        "equipments": [
+          "마이크로매니퓰레이터",
+          "PCR머신",
+          "오실로스코프",
+          "원심분리기"
+        ],
+        "reagents": [
+          "트립신",
+          "TRIzol",
+          "사이토카인"
+        ],
+        "vector_embedding_id": "vec_fbe633b9"
+      },
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2025,
+        "journal": "Cell Biology International",
+        "doi": "10.8450/abc.268",
+        "authors": [
+          "박세포",
+          "최분화",
+          "윤분자",
+          "조생명"
+        ],
+        "equipments": [
+          "원심분리기",
+          "오실로스코프",
+          "유세포분석기",
+          "PCR머신"
+        ],
+        "reagents": [
+          "DNA 벡터",
+          "MitoTracker",
+          "TRIzol"
+        ],
+        "vector_embedding_id": "vec_585e4e15"
+      },
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2020,
+        "journal": "Nature Immunology",
+        "doi": null,
+        "authors": [
+          "이신경",
+          "박세포"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "패치클램프"
+        ],
+        "reagents": [
+          "TRIzol",
+          "단백질 키트",
+          "FBS"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user11",
+    "papers": [
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2023,
+        "journal": "Molecular Therapy",
+        "doi": null,
+        "authors": [
+          "김면역",
+          "윤분자",
+          "홍길동",
+          "박세포"
+        ],
+        "equipments": [
+          "마이크로매니퓰레이터",
+          "세포호흡측정기",
+          "유세포분석기"
+        ],
+        "reagents": [
+          "프라이머",
+          "단백질 키트"
+        ],
+        "vector_embedding_id": "vec_87d9f93e"
+      },
+      {
+        "title": "산화스트레스 반응 경로",
+        "abstract": "면역세포 반응 분석",
+        "year": 2022,
+        "journal": "Biochemical Journal",
+        "doi": null,
+        "authors": [
+          "장백신",
+          "최분화"
+        ],
+        "equipments": [
+          "PCR머신",
+          "원심분리기",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "항체",
+          "DNA 벡터",
+          "사이토카인"
+        ],
+        "vector_embedding_id": "vec_74929eba"
+      },
+      {
+        "title": "산화스트레스 반응 경로",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2024,
+        "journal": "Immunology Letters",
+        "doi": "10.4424/abc.979",
+        "authors": [
+          "홍길동",
+          "박세포"
+        ],
+        "equipments": [
+          "패치클램프",
+          "PCR머신",
+          "세포호흡측정기"
+        ],
+        "reagents": [
+          "프라이머",
+          "항체",
+          "트립신"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user12",
+    "papers": [
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2022,
+        "journal": "Immunology Letters",
+        "doi": "10.2122/abc.815",
+        "authors": [
+          "조생명",
+          "윤분자"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "패치클램프"
+        ],
+        "reagents": [
+          "DNA 벡터",
+          "트립신"
+        ],
+        "vector_embedding_id": "vec_1656a56a"
+      },
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2021,
+        "journal": "Immunology Letters",
+        "doi": null,
+        "authors": [
+          "박세포",
+          "윤분자",
+          "이신경"
+        ],
+        "equipments": [
+          "형광현미경",
+          "유세포분석기",
+          "세포호흡측정기",
+          "원심분리기"
+        ],
+        "reagents": [
+          "FBS",
+          "MitoTracker"
+        ],
+        "vector_embedding_id": "vec_8bb59443"
+      },
+      {
+        "title": "세포 대사 조절 경로",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2024,
+        "journal": "Nature Immunology",
+        "doi": "10.5190/abc.294",
+        "authors": [
+          "최분화",
+          "조생명",
+          "이신경"
+        ],
+        "equipments": [
+          "패치클램프",
+          "마이크로매니퓰레이터",
+          "PCR머신"
+        ],
+        "reagents": [
+          "FBS",
+          "사이토카인",
+          "단백질 키트",
+          "항체"
+        ],
+        "vector_embedding_id": "vec_3c959f9a"
+      }
+    ]
+  },
+  {
+    "user_id": "user13",
+    "papers": [
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "단백질 발현 조절 연구",
+        "year": 2022,
+        "journal": "Molecular Therapy",
+        "doi": null,
+        "authors": [
+          "박세포",
+          "홍길동",
+          "조생명",
+          "최분화"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "세포호흡측정기",
+          "패치클램프"
+        ],
+        "reagents": [
+          "트립신",
+          "사이토카인"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "면역세포 활성화와 면역억제 연구",
+        "abstract": "면역세포 반응 분석",
+        "year": 2022,
+        "journal": "Neuroscience Research",
+        "doi": null,
+        "authors": [
+          "윤분자",
+          "이신경",
+          "박세포",
+          "홍길동"
+        ],
+        "equipments": [
+          "마이크로매니퓰레이터",
+          "유세포분석기"
+        ],
+        "reagents": [
+          "사이토카인",
+          "DNA 벡터",
+          "프라이머",
+          "단백질 키트"
+        ],
+        "vector_embedding_id": "vec_147153e8"
+      },
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2022,
+        "journal": "Biochemical Journal",
+        "doi": "10.9919/abc.995",
+        "authors": [
+          "장백신",
+          "김면역"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "형광현미경"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "항체"
+        ],
+        "vector_embedding_id": "vec_82557303"
+      }
+    ]
+  },
+  {
+    "user_id": "user14",
+    "papers": [
+      {
+        "title": "바이러스 감염 메커니즘",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2024,
+        "journal": "Biochemical Journal",
+        "doi": "10.8671/abc.250",
+        "authors": [
+          "홍길동",
+          "이신경"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "FBS",
+          "DNA 벡터",
+          "TRIzol"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "면역세포 활성화와 면역억제 연구",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2021,
+        "journal": "Molecular Therapy",
+        "doi": "10.9712/abc.538",
+        "authors": [
+          "박세포",
+          "윤분자",
+          "홍길동",
+          "김면역"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "세포호흡측정기",
+          "유세포분석기",
+          "형광현미경"
+        ],
+        "reagents": [
+          "항체",
+          "FBS",
+          "DNA 벡터",
+          "TRIzol"
+        ],
+        "vector_embedding_id": "vec_adad4963"
+      },
+      {
+        "title": "산화스트레스 반응 경로",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2020,
+        "journal": "Molecular Therapy",
+        "doi": null,
+        "authors": [
+          "조생명",
+          "윤분자"
+        ],
+        "equipments": [
+          "원심분리기",
+          "PCR머신",
+          "형광현미경"
+        ],
+        "reagents": [
+          "TRIzol",
+          "단백질 키트",
+          "사이토카인"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user15",
+    "papers": [
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2020,
+        "journal": "Immunology Letters",
+        "doi": "10.4850/abc.526",
+        "authors": [
+          "박세포",
+          "장백신"
+        ],
+        "equipments": [
+          "패치클램프",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "DNA 벡터",
+          "FBS"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2024,
+        "journal": "Neuroscience Research",
+        "doi": "10.6878/abc.267",
+        "authors": [
+          "홍길동",
+          "장백신",
+          "윤분자",
+          "김면역"
+        ],
+        "equipments": [
+          "원심분리기",
+          "형광현미경",
+          "세포호흡측정기",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "트립신",
+          "프라이머",
+          "단백질 키트",
+          "사이토카인"
+        ],
+        "vector_embedding_id": "vec_e6945896"
+      },
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2023,
+        "journal": "Immunology Letters",
+        "doi": "10.1553/abc.912",
+        "authors": [
+          "장백신",
+          "최분화",
+          "조생명",
+          "박세포"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "패치클램프"
+        ],
+        "reagents": [
+          "TRIzol",
+          "프라이머",
+          "사이토카인",
+          "MitoTracker"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user16",
+    "papers": [
+      {
+        "title": "자기포식작용과 질병",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2020,
+        "journal": "Molecular Therapy",
+        "doi": null,
+        "authors": [
+          "윤분자",
+          "이신경",
+          "김면역",
+          "홍길동"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "PCR머신",
+          "마이크로매니퓰레이터",
+          "형광현미경"
+        ],
+        "reagents": [
+          "사이토카인",
+          "FBS"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "줄기세포 재생 메커니즘",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2021,
+        "journal": "Neuroscience Research",
+        "doi": "10.1380/abc.889",
+        "authors": [
+          "조생명",
+          "박세포",
+          "이신경"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "패치클램프",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "프라이머",
+          "MitoTracker"
+        ],
+        "vector_embedding_id": "vec_850484a6"
+      },
+      {
+        "title": "세포 대사 조절 경로",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2025,
+        "journal": "Nature Immunology",
+        "doi": "10.1206/abc.798",
+        "authors": [
+          "장백신",
+          "윤분자",
+          "박세포",
+          "최분화"
+        ],
+        "equipments": [
+          "마이크로매니퓰레이터",
+          "원심분리기",
+          "유세포분석기",
+          "형광현미경"
+        ],
+        "reagents": [
+          "트립신",
+          "사이토카인"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user17",
+    "papers": [
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "면역세포 반응 분석",
+        "year": 2022,
+        "journal": "Biochemical Journal",
+        "doi": null,
+        "authors": [
+          "김면역",
+          "조생명"
+        ],
+        "equipments": [
+          "형광현미경",
+          "세포호흡측정기",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "FBS",
+          "DNA 벡터",
+          "사이토카인"
+        ],
+        "vector_embedding_id": "vec_babc8c42"
+      },
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2020,
+        "journal": "Molecular Therapy",
+        "doi": "10.4881/abc.951",
+        "authors": [
+          "홍길동",
+          "조생명",
+          "김면역"
+        ],
+        "equipments": [
+          "형광현미경",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "트립신",
+          "TRIzol",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "단백질 발현 조절 연구",
+        "year": 2025,
+        "journal": "Nature Immunology",
+        "doi": "10.3669/abc.711",
+        "authors": [
+          "장백신",
+          "최분화",
+          "박세포",
+          "홍길동"
+        ],
+        "equipments": [
+          "마이크로매니퓰레이터",
+          "패치클램프",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "트립신",
+          "단백질 키트"
+        ],
+        "vector_embedding_id": "vec_d302b171"
+      }
+    ]
+  },
+  {
+    "user_id": "user18",
+    "papers": [
+      {
+        "title": "바이러스 감염 메커니즘",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2020,
+        "journal": "Nature Immunology",
+        "doi": null,
+        "authors": [
+          "홍길동",
+          "윤분자"
+        ],
+        "equipments": [
+          "마이크로매니퓰레이터",
+          "원심분리기",
+          "형광현미경"
+        ],
+        "reagents": [
+          "프라이머",
+          "MitoTracker",
+          "TRIzol"
+        ],
+        "vector_embedding_id": "vec_1c44cb6b"
+      },
+      {
+        "title": "산화스트레스 반응 경로",
+        "abstract": "면역세포 반응 분석",
+        "year": 2020,
+        "journal": "Immunology Letters",
+        "doi": "10.3518/abc.603",
+        "authors": [
+          "이신경",
+          "장백신"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "원심분리기"
+        ],
+        "reagents": [
+          "트립신",
+          "프라이머"
+        ],
+        "vector_embedding_id": "vec_9a354cdb"
+      },
+      {
+        "title": "면역세포 활성화와 면역억제 연구",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2022,
+        "journal": "Neuroscience Research",
+        "doi": null,
+        "authors": [
+          "최분화",
+          "윤분자",
+          "홍길동",
+          "장백신"
+        ],
+        "equipments": [
+          "원심분리기",
+          "형광현미경",
+          "세포호흡측정기"
+        ],
+        "reagents": [
+          "TRIzol",
+          "프라이머",
+          "사이토카인"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user19",
+    "papers": [
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2025,
+        "journal": "Immunology Letters",
+        "doi": "10.3590/abc.172",
+        "authors": [
+          "윤분자",
+          "김면역",
+          "장백신",
+          "조생명"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "형광현미경",
+          "세포호흡측정기"
+        ],
+        "reagents": [
+          "항체",
+          "TRIzol",
+          "사이토카인"
+        ],
+        "vector_embedding_id": "vec_037eb21f"
+      },
+      {
+        "title": "바이러스 감염 메커니즘",
+        "abstract": "면역세포 반응 분석",
+        "year": 2021,
+        "journal": "Nature Immunology",
+        "doi": "10.2081/abc.995",
+        "authors": [
+          "김면역",
+          "홍길동"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "유세포분석기",
+          "원심분리기",
+          "형광현미경"
+        ],
+        "reagents": [
+          "사이토카인",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": "vec_c7edfab2"
+      },
+      {
+        "title": "바이러스 감염 메커니즘",
+        "abstract": "면역세포 반응 분석",
+        "year": 2025,
+        "journal": "Biochemical Journal",
+        "doi": "10.7762/abc.122",
+        "authors": [
+          "박세포",
+          "이신경",
+          "조생명"
+        ],
+        "equipments": [
+          "형광현미경",
+          "오실로스코프",
+          "유세포분석기",
+          "패치클램프"
+        ],
+        "reagents": [
+          "항체",
+          "트립신"
+        ],
+        "vector_embedding_id": "vec_6c281fba"
+      }
+    ]
+  },
+  {
+    "user_id": "user20",
+    "papers": [
+      {
+        "title": "세포 대사 조절 경로",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2023,
+        "journal": "Biochemical Journal",
+        "doi": "10.8845/abc.534",
+        "authors": [
+          "윤분자",
+          "김면역",
+          "장백신",
+          "조생명"
+        ],
+        "equipments": [
+          "PCR머신",
+          "유세포분석기"
+        ],
+        "reagents": [
+          "항체",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": "vec_62433b11"
+      },
+      {
+        "title": "줄기세포 재생 메커니즘",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2024,
+        "journal": "Biochemical Journal",
+        "doi": null,
+        "authors": [
+          "홍길동",
+          "이신경",
+          "윤분자"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "유세포분석기",
+          "형광현미경"
+        ],
+        "reagents": [
+          "FBS",
+          "TRIzol",
+          "트립신"
+        ],
+        "vector_embedding_id": "vec_645d58d2"
+      },
+      {
+        "title": "줄기세포 재생 메커니즘",
+        "abstract": "단백질 발현 조절 연구",
+        "year": 2025,
+        "journal": "Immunology Letters",
+        "doi": null,
+        "authors": [
+          "조생명",
+          "윤분자",
+          "장백신",
+          "최분화"
+        ],
+        "equipments": [
+          "마이크로매니퓰레이터",
+          "유세포분석기"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user21",
+    "papers": [
+      {
+        "title": "바이러스 감염 메커니즘",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2023,
+        "journal": "Immunology Letters",
+        "doi": "10.4338/abc.764",
+        "authors": [
+          "박세포",
+          "장백신"
+        ],
+        "equipments": [
+          "세포호흡측정기",
+          "형광현미경",
+          "유세포분석기"
+        ],
+        "reagents": [
+          "TRIzol",
+          "프라이머"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "자기포식작용과 질병",
+        "abstract": "단백질 발현 조절 연구",
+        "year": 2020,
+        "journal": "Molecular Therapy",
+        "doi": "10.1345/abc.523",
+        "authors": [
+          "이신경",
+          "홍길동",
+          "박세포"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "형광현미경",
+          "마이크로매니퓰레이터",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "FBS",
+          "DNA 벡터",
+          "TRIzol"
+        ],
+        "vector_embedding_id": "vec_ac0d1833"
+      },
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "단백질 발현 조절 연구",
+        "year": 2021,
+        "journal": "Biochemical Journal",
+        "doi": null,
+        "authors": [
+          "조생명",
+          "홍길동",
+          "윤분자",
+          "이신경"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "PCR머신"
+        ],
+        "reagents": [
+          "트립신",
+          "TRIzol",
+          "DNA 벡터",
+          "FBS"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user22",
+    "papers": [
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2025,
+        "journal": "Cell Biology International",
+        "doi": "10.4179/abc.645",
+        "authors": [
+          "조생명",
+          "김면역",
+          "이신경",
+          "윤분자"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "패치클램프"
+        ],
+        "reagents": [
+          "사이토카인",
+          "MitoTracker",
+          "TRIzol",
+          "단백질 키트"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2021,
+        "journal": "Immunology Letters",
+        "doi": "10.4405/abc.445",
+        "authors": [
+          "최분화",
+          "조생명",
+          "김면역"
+        ],
+        "equipments": [
+          "PCR머신",
+          "패치클램프",
+          "유세포분석기"
+        ],
+        "reagents": [
+          "단백질 키트",
+          "사이토카인",
+          "프라이머"
+        ],
+        "vector_embedding_id": "vec_42dfc980"
+      },
+      {
+        "title": "산화스트레스 반응 경로",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2020,
+        "journal": "Biochemical Journal",
+        "doi": "10.8962/abc.761",
+        "authors": [
+          "조생명",
+          "장백신"
+        ],
+        "equipments": [
+          "패치클램프",
+          "오실로스코프",
+          "원심분리기"
+        ],
+        "reagents": [
+          "TRIzol",
+          "프라이머"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user23",
+    "papers": [
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "면역세포 반응 분석",
+        "year": 2024,
+        "journal": "Cell Biology International",
+        "doi": "10.9488/abc.583",
+        "authors": [
+          "윤분자",
+          "홍길동",
+          "최분화"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "마이크로매니퓰레이터",
+          "패치클램프",
+          "세포호흡측정기"
+        ],
+        "reagents": [
+          "단백질 키트",
+          "MitoTracker",
+          "DNA 벡터",
+          "TRIzol"
+        ],
+        "vector_embedding_id": "vec_48da5e11"
+      },
+      {
+        "title": "산화스트레스 반응 경로",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2022,
+        "journal": "Neuroscience Research",
+        "doi": null,
+        "authors": [
+          "윤분자",
+          "박세포",
+          "이신경",
+          "김면역"
+        ],
+        "equipments": [
+          "PCR머신",
+          "원심분리기",
+          "세포호흡측정기",
+          "유세포분석기"
+        ],
+        "reagents": [
+          "FBS",
+          "프라이머",
+          "트립신",
+          "사이토카인"
+        ],
+        "vector_embedding_id": "vec_64354be1"
+      },
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "단백질 발현 조절 연구",
+        "year": 2025,
+        "journal": "Immunology Letters",
+        "doi": null,
+        "authors": [
+          "박세포",
+          "이신경"
+        ],
+        "equipments": [
+          "형광현미경",
+          "원심분리기",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "TRIzol",
+          "단백질 키트",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": "vec_6e9324bd"
+      }
+    ]
+  },
+  {
+    "user_id": "user24",
+    "papers": [
+      {
+        "title": "면역세포 활성화와 면역억제 연구",
+        "abstract": "단백질 발현 조절 연구",
+        "year": 2025,
+        "journal": "Biochemical Journal",
+        "doi": "10.4389/abc.920",
+        "authors": [
+          "김면역",
+          "장백신",
+          "이신경"
+        ],
+        "equipments": [
+          "세포호흡측정기",
+          "패치클램프",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "TRIzol",
+          "프라이머",
+          "단백질 키트"
+        ],
+        "vector_embedding_id": "vec_56ef1475"
+      },
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2022,
+        "journal": "Molecular Therapy",
+        "doi": "10.7207/abc.746",
+        "authors": [
+          "홍길동",
+          "장백신",
+          "이신경"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "형광현미경",
+          "원심분리기"
+        ],
+        "reagents": [
+          "TRIzol",
+          "트립신",
+          "사이토카인"
+        ],
+        "vector_embedding_id": "vec_1dad5221"
+      },
+      {
+        "title": "산화스트레스 반응 경로",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2025,
+        "journal": "Biochemical Journal",
+        "doi": null,
+        "authors": [
+          "김면역",
+          "최분화",
+          "조생명",
+          "박세포"
+        ],
+        "equipments": [
+          "원심분리기",
+          "패치클램프"
+        ],
+        "reagents": [
+          "사이토카인",
+          "TRIzol"
+        ],
+        "vector_embedding_id": "vec_f1a3022c"
+      }
+    ]
+  },
+  {
+    "user_id": "user25",
+    "papers": [
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2024,
+        "journal": "Nature Immunology",
+        "doi": null,
+        "authors": [
+          "조생명",
+          "박세포"
+        ],
+        "equipments": [
+          "형광현미경",
+          "원심분리기",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "단백질 키트",
+          "항체"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "자기포식작용과 질병",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2021,
+        "journal": "Molecular Therapy",
+        "doi": null,
+        "authors": [
+          "장백신",
+          "홍길동"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "패치클램프",
+          "유세포분석기",
+          "형광현미경"
+        ],
+        "reagents": [
+          "트립신",
+          "FBS",
+          "프라이머"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "면역세포 활성화와 면역억제 연구",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2025,
+        "journal": "Biochemical Journal",
+        "doi": null,
+        "authors": [
+          "윤분자",
+          "홍길동"
+        ],
+        "equipments": [
+          "패치클램프",
+          "오실로스코프",
+          "형광현미경"
+        ],
+        "reagents": [
+          "프라이머",
+          "TRIzol",
+          "트립신"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user26",
+    "papers": [
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2020,
+        "journal": "Neuroscience Research",
+        "doi": "10.8989/abc.955",
+        "authors": [
+          "최분화",
+          "장백신",
+          "홍길동",
+          "이신경"
+        ],
+        "equipments": [
+          "마이크로매니퓰레이터",
+          "원심분리기",
+          "세포호흡측정기"
+        ],
+        "reagents": [
+          "FBS",
+          "TRIzol",
+          "항체"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "산화스트레스 반응 경로",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2022,
+        "journal": "Immunology Letters",
+        "doi": null,
+        "authors": [
+          "장백신",
+          "최분화",
+          "이신경",
+          "홍길동"
+        ],
+        "equipments": [
+          "PCR머신",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "트립신",
+          "단백질 키트",
+          "사이토카인",
+          "항체"
+        ],
+        "vector_embedding_id": "vec_d6549a46"
+      },
+      {
+        "title": "자기포식작용과 질병",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2023,
+        "journal": "Biochemical Journal",
+        "doi": "10.3382/abc.272",
+        "authors": [
+          "최분화",
+          "윤분자",
+          "김면역"
+        ],
+        "equipments": [
+          "패치클램프",
+          "세포호흡측정기",
+          "형광현미경",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "DNA 벡터",
+          "트립신"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user27",
+    "papers": [
+      {
+        "title": "자기포식작용과 질병",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2025,
+        "journal": "Molecular Therapy",
+        "doi": null,
+        "authors": [
+          "이신경",
+          "최분화",
+          "김면역",
+          "장백신"
+        ],
+        "equipments": [
+          "PCR머신",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "프라이머",
+          "DNA 벡터",
+          "단백질 키트"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "산화스트레스 반응 경로",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2020,
+        "journal": "Nature Immunology",
+        "doi": null,
+        "authors": [
+          "김면역",
+          "이신경",
+          "최분화"
+        ],
+        "equipments": [
+          "세포호흡측정기",
+          "오실로스코프",
+          "PCR머신"
+        ],
+        "reagents": [
+          "DNA 벡터",
+          "트립신"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "바이러스 감염 메커니즘",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2020,
+        "journal": "Molecular Therapy",
+        "doi": null,
+        "authors": [
+          "윤분자",
+          "조생명",
+          "김면역"
+        ],
+        "equipments": [
+          "패치클램프",
+          "세포호흡측정기"
+        ],
+        "reagents": [
+          "TRIzol",
+          "트립신"
+        ],
+        "vector_embedding_id": "vec_a7c84839"
+      }
+    ]
+  },
+  {
+    "user_id": "user28",
+    "papers": [
+      {
+        "title": "줄기세포 재생 메커니즘",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2022,
+        "journal": "Nature Immunology",
+        "doi": null,
+        "authors": [
+          "김면역",
+          "홍길동",
+          "조생명",
+          "이신경"
+        ],
+        "equipments": [
+          "패치클램프",
+          "오실로스코프",
+          "원심분리기"
+        ],
+        "reagents": [
+          "항체",
+          "프라이머",
+          "단백질 키트",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": "vec_14a6c5fd"
+      },
+      {
+        "title": "줄기세포 재생 메커니즘",
+        "abstract": "단백질 발현 조절 연구",
+        "year": 2021,
+        "journal": "Neuroscience Research",
+        "doi": "10.8854/abc.537",
+        "authors": [
+          "이신경",
+          "조생명"
+        ],
+        "equipments": [
+          "원심분리기",
+          "패치클램프"
+        ],
+        "reagents": [
+          "FBS",
+          "트립신",
+          "MitoTracker"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "줄기세포 재생 메커니즘",
+        "abstract": "면역세포 반응 분석",
+        "year": 2022,
+        "journal": "Cell Biology International",
+        "doi": null,
+        "authors": [
+          "조생명",
+          "홍길동",
+          "김면역"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "형광현미경"
+        ],
+        "reagents": [
+          "단백질 키트",
+          "항체",
+          "TRIzol"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user29",
+    "papers": [
+      {
+        "title": "산화스트레스 반응 경로",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2021,
+        "journal": "Cell Biology International",
+        "doi": null,
+        "authors": [
+          "조생명",
+          "장백신",
+          "이신경"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "세포호흡측정기",
+          "형광현미경",
+          "패치클램프"
+        ],
+        "reagents": [
+          "항체",
+          "프라이머",
+          "사이토카인"
+        ],
+        "vector_embedding_id": "vec_d6cf4edf"
+      },
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2020,
+        "journal": "Neuroscience Research",
+        "doi": "10.9987/abc.112",
+        "authors": [
+          "조생명",
+          "윤분자"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "원심분리기"
+        ],
+        "reagents": [
+          "트립신",
+          "프라이머",
+          "사이토카인"
+        ],
+        "vector_embedding_id": "vec_394c9847"
+      },
+      {
+        "title": "면역세포 활성화와 면역억제 연구",
+        "abstract": "면역세포 반응 분석",
+        "year": 2024,
+        "journal": "Cell Biology International",
+        "doi": "10.1797/abc.440",
+        "authors": [
+          "김면역",
+          "최분화",
+          "윤분자",
+          "조생명"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "패치클램프",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "FBS",
+          "항체"
+        ],
+        "vector_embedding_id": "vec_72034815"
+      }
+    ]
+  },
+  {
+    "user_id": "user30",
+    "papers": [
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2024,
+        "journal": "Cell Biology International",
+        "doi": "10.4687/abc.206",
+        "authors": [
+          "박세포",
+          "최분화"
+        ],
+        "equipments": [
+          "PCR머신",
+          "마이크로매니퓰레이터",
+          "형광현미경"
+        ],
+        "reagents": [
+          "트립신",
+          "사이토카인",
+          "항체"
+        ],
+        "vector_embedding_id": "vec_9d5122d5"
+      },
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "질병 관련 유전자 탐색",
+        "year": 2025,
+        "journal": "Biochemical Journal",
+        "doi": null,
+        "authors": [
+          "최분화",
+          "홍길동",
+          "김면역"
+        ],
+        "equipments": [
+          "원심분리기",
+          "PCR머신",
+          "마이크로매니퓰레이터",
+          "패치클램프"
+        ],
+        "reagents": [
+          "TRIzol",
+          "트립신"
+        ],
+        "vector_embedding_id": null
+      },
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "단백질 발현 조절 연구",
+        "year": 2023,
+        "journal": "Nature Immunology",
+        "doi": "10.9134/abc.502",
+        "authors": [
+          "박세포",
+          "조생명",
+          "윤분자",
+          "김면역"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "패치클램프"
+        ],
+        "reagents": [
+          "프라이머",
+          "트립신",
+          "항체",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": null
+      }
+    ]
+  },
+  {
+    "user_id": "user31",
+    "papers": [
+      {
+        "title": "줄기세포 재생 메커니즘",
+        "abstract": "면역세포 반응 분석",
+        "year": 2025,
+        "journal": "Immunology Letters",
+        "doi": "10.1615/abc.549",
+        "authors": [
+          "김면역",
+          "홍길동",
+          "이신경"
+        ],
+        "equipments": [
+          "오실로스코프",
+          "원심분리기",
+          "PCR머신",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "사이토카인",
+          "MitoTracker"
+        ],
+        "vector_embedding_id": "vec_7ad02f1d"
+      },
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2023,
+        "journal": "Molecular Therapy",
+        "doi": null,
+        "authors": [
+          "최분화",
+          "장백신"
+        ],
+        "equipments": [
+          "패치클램프",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "FBS",
+          "프라이머",
+          "항체",
+          "트립신"
+        ],
+        "vector_embedding_id": "vec_4296489a"
+      },
+      {
+        "title": "면역세포 활성화와 면역억제 연구",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2024,
+        "journal": "Immunology Letters",
+        "doi": "10.3376/abc.375",
+        "authors": [
+          "박세포",
+          "김면역",
+          "최분화"
+        ],
+        "equipments": [
+          "패치클램프",
+          "오실로스코프"
+        ],
+        "reagents": [
+          "MitoTracker",
+          "DNA 벡터",
+          "프라이머"
+        ],
+        "vector_embedding_id": "vec_0b88b39c"
+      }
+    ]
+  },
+  {
+    "user_id": "user32",
+    "papers": [
+      {
+        "title": "암세포 성장 억제",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2021,
+        "journal": "Molecular Therapy",
+        "doi": null,
+        "authors": [
+          "최분화",
+          "이신경"
+        ],
+        "equipments": [
+          "패치클램프",
+          "세포호흡측정기",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "항체",
+          "트립신",
+          "프라이머"
+        ],
+        "vector_embedding_id": "vec_97e88233"
+      },
+      {
+        "title": "신경세포 분화와 발달",
+        "abstract": "세포분열과 사멸 메커니즘 규명",
+        "year": 2023,
+        "journal": "Immunology Letters",
+        "doi": null,
+        "authors": [
+          "홍길동",
+          "김면역",
+          "윤분자"
+        ],
+        "equipments": [
+          "원심분리기",
+          "오실로스코프",
+          "형광현미경"
+        ],
+        "reagents": [
+          "DNA 벡터",
+          "트립신",
+          "프라이머"
+        ],
+        "vector_embedding_id": "vec_576bd4cd"
+      },
+      {
+        "title": "줄기세포 재생 메커니즘",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2025,
+        "journal": "Immunology Letters",
+        "doi": "10.3420/abc.351",
+        "authors": [
+          "장백신",
+          "윤분자"
+        ],
+        "equipments": [
+          "원심분리기",
+          "오실로스코프",
+          "세포호흡측정기",
+          "유세포분석기"
+        ],
+        "reagents": [
+          "FBS",
+          "사이토카인",
+          "단백질 키트"
+        ],
+        "vector_embedding_id": "vec_318dc1a4"
+      }
+    ]
+  }
+]
