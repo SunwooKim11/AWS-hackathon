@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 # 환경 변수 로드
 load_dotenv()
 
-app = FastAPI(title="Research Recommendation System")
+app = FastAPI(title="K-BIOX API")
 
 # CORS 설정
 app.add_middleware(
