@@ -1,0 +1,1602 @@
+[
+    {
+      "user_id": "user1",
+      "abstract": "면역세포 활성화 경로 및 면역억제 기전 탐색",
+      "equipment": [
+        "패치클램프",
+        "마이크로매니퓰레이터",
+        "오실로스코프",
+        "세포호흡측정기"
+      ],
+      "reagents": [
+        "프라이머",
+        "항체",
+        "MitoTracker",
+        "사이토카인"
+      ]
+    },
+    {
+      "user_id": "user2",
+      "abstract": "신경세포 분화 조절 메커니즘 규명",
+      "equipment": [
+        "마이크로매니퓰레이터",
+        "유세포분석기",
+        "형광현미경",
+        "PCR머신"
+      ],
+      "reagents": [
+        "트립신",
+        "DNA 벡터",
+        "TRIzol",
+        "FBS"
+      ]
+    },
+    {
+      "user_id": "user3",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "인큐베이터",
+        "3D 바이오프린터",
+        "원심분리기",
+        "세포호흡측정기"
+      ],
+      "reagents": [
+        "FBS",
+        "DMSO",
+        "PBS",
+        "MitoTracker"
+      ]
+    },
+    {
+      "user_id": "user4",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "HPLC",
+        "PCR머신",
+        "유세포분석기",
+        "인큐베이터"
+      ],
+      "reagents": [
+        "프라이머",
+        "DNA 벡터",
+        "TTX",
+        "사이토카인"
+      ]
+    },
+    {
+      "user_id": "user5",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "유세포분석기",
+        "패치클램프",
+        "인큐베이터",
+        "PCR머신"
+      ],
+      "reagents": [
+        "GelMA",
+        "프라이머",
+        "PBS",
+        "사이토카인"
+      ]
+    },
+    {
+      "user_id": "user6",
+      "abstract": "신경세포 분화 조절 메커니즘 규명",
+      "equipment": [
+        "전기영동장치",
+        "마이크로매니퓰레이터",
+        "인큐베이터",
+        "형광현미경"
+      ],
+      "reagents": [
+        "프라이머",
+        "L-글루타민",
+        "Annexin V",
+        "글루타메이트"
+      ]
+    },
+    {
+      "user_id": "user7",
+      "abstract": "암세포 내 신호전달 경로 억제 기전 연구",
+      "equipment": [
+        "원심분리기",
+        "전기영동장치",
+        "패치클램프",
+        "PCR머신"
+      ],
+      "reagents": [
+        "아가로스",
+        "사이토카인",
+        "DMSO",
+        "GelMA"
+      ]
+    },
+    {
+      "user_id": "user8",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "원심분리기",
+        "PCR머신",
+        "유세포분석기",
+        "질량분석기"
+      ],
+      "reagents": [
+        "아가로스",
+        "DNA 벡터",
+        "TTX",
+        "TRIzol"
+      ]
+    },
+    {
+      "user_id": "user9",
+      "abstract": "줄기세포를 이용한 조직 재생 기전 분석",
+      "equipment": [
+        "HPLC",
+        "PCR머신",
+        "질량분석기",
+        "유세포분석기"
+      ],
+      "reagents": [
+        "PBS",
+        "TTX",
+        "FBS",
+        "아가로스"
+      ]
+    },
+    {
+      "user_id": "user10",
+      "abstract": "신경세포 분화 조절 메커니즘 규명",
+      "equipment": [
+        "PCR머신",
+        "전기영동장치",
+        "3D 바이오프린터",
+        "원심분리기"
+      ],
+      "reagents": [
+        "TTX",
+        "FBS",
+        "바이오사이틴",
+        "RPMI1640"
+      ]
+    },
+    {
+      "user_id": "user11",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "오실로스코프",
+        "형광현미경",
+        "HPLC",
+        "클린벤치"
+      ],
+      "reagents": [
+        "FBS",
+        "PBS",
+        "MitoTracker",
+        "TTX"
+      ]
+    },
+    {
+      "user_id": "user12",
+      "abstract": "바이오마커 기반 조기 진단 기술 개발",
+      "equipment": [
+        "형광현미경",
+        "전기영동장치",
+        "유세포분석기",
+        "클린벤치"
+      ],
+      "reagents": [
+        "L-글루타민",
+        "트립신",
+        "프라이머",
+        "아가로스"
+      ]
+    },
+    {
+      "user_id": "user13",
+      "abstract": "3D 세포 배양 시스템을 이용한 약물 반응 분석",
+      "equipment": [
+        "패치클램프",
+        "3D 바이오프린터",
+        "인큐베이터",
+        "HPLC"
+      ],
+      "reagents": [
+        "TRIzol",
+        "DMEM",
+        "프라이머",
+        "Annexin V"
+      ]
+    },
+    {
+      "user_id": "user14",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "HPLC",
+        "질량분석기",
+        "PCR머신",
+        "클린벤치"
+      ],
+      "reagents": [
+        "TTX",
+        "DNA 벡터",
+        "Annexin V",
+        "아가로스"
+      ]
+    },
+    {
+      "user_id": "user15",
+      "abstract": "3D 세포 배양 시스템을 이용한 약물 반응 분석",
+      "equipment": [
+        "질량분석기",
+        "원심분리기",
+        "3D 바이오프린터",
+        "PCR머신"
+      ],
+      "reagents": [
+        "DMEM",
+        "RPMI1640",
+        "사이토카인",
+        "항체"
+      ]
+    },
+    {
+      "user_id": "user16",
+      "abstract": "3D 세포 배양 시스템을 이용한 약물 반응 분석",
+      "equipment": [
+        "패치클램프",
+        "3D 바이오프린터",
+        "유세포분석기",
+        "오실로스코프"
+      ],
+      "reagents": [
+        "사이토카인",
+        "TTX",
+        "항체",
+        "바이오사이틴"
+      ]
+    },
+    {
+      "user_id": "user17",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "마이크로매니퓰레이터",
+        "PCR머신",
+        "질량분석기",
+        "유세포분석기"
+      ],
+      "reagents": [
+        "DMEM",
+        "GelMA",
+        "프라이머",
+        "RPMI1640"
+      ]
+    },
+    {
+      "user_id": "user18",
+      "abstract": "단백질 상호작용 분석을 통한 질병 기전 규명 연구",
+      "equipment": [
+        "PCR머신",
+        "마이크로매니퓰레이터",
+        "패치클램프",
+        "유세포분석기"
+      ],
+      "reagents": [
+        "Annexin V",
+        "FBS",
+        "글루타메이트",
+        "PBS"
+      ]
+    },
+    {
+      "user_id": "user19",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "HPLC",
+        "전기영동장치",
+        "패치클램프",
+        "클린벤치"
+      ],
+      "reagents": [
+        "MitoTracker",
+        "사이토카인",
+        "GelMA",
+        "RPMI1640"
+      ]
+    },
+    {
+      "user_id": "user20",
+      "abstract": "3D 세포 배양 시스템을 이용한 약물 반응 분석",
+      "equipment": [
+        "PCR머신",
+        "마이크로매니퓰레이터",
+        "패치클램프",
+        "3D 바이오프린터"
+      ],
+      "reagents": [
+        "RPMI1640",
+        "사이토카인",
+        "DMSO",
+        "아가로스"
+      ]
+    },
+    {
+      "user_id": "user21",
+      "abstract": "줄기세포를 이용한 조직 재생 기전 분석",
+      "equipment": [
+        "인큐베이터",
+        "유세포분석기",
+        "패치클램프",
+        "마이크로매니퓰레이터"
+      ],
+      "reagents": [
+        "트립신",
+        "Annexin V",
+        "FBS",
+        "사이토카인"
+      ]
+    },
+    {
+      "user_id": "user22",
+      "abstract": "바이오마커 기반 조기 진단 기술 개발",
+      "equipment": [
+        "전기영동장치",
+        "마이크로매니퓰레이터",
+        "형광현미경",
+        "PCR머신"
+      ],
+      "reagents": [
+        "MitoTracker",
+        "TTX",
+        "바이오사이틴",
+        "글루타메이트"
+      ]
+    },
+    {
+      "user_id": "user23",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "패치클램프",
+        "3D 바이오프린터",
+        "오실로스코프",
+        "원심분리기"
+      ],
+      "reagents": [
+        "TRIzol",
+        "GelMA",
+        "바이오사이틴",
+        "PBS"
+      ]
+    },
+    {
+      "user_id": "user24",
+      "abstract": "신경세포 분화 조절 메커니즘 규명",
+      "equipment": [
+        "인큐베이터",
+        "패치클램프",
+        "유세포분석기",
+        "오실로스코프"
+      ],
+      "reagents": [
+        "DNA 벡터",
+        "MitoTracker",
+        "PBS",
+        "FBS"
+      ]
+    },
+    {
+      "user_id": "user25",
+      "abstract": "세포 내 대사경로 변화를 이용한 신약 타겟 발굴",
+      "equipment": [
+        "마이크로매니퓰레이터",
+        "클린벤치",
+        "형광현미경",
+        "3D 바이오프린터"
+      ],
+      "reagents": [
+        "GelMA",
+        "사이토카인",
+        "Annexin V",
+        "DMSO"
+      ]
+    },
+    {
+      "user_id": "user26",
+      "abstract": "바이오마커 기반 조기 진단 기술 개발",
+      "equipment": [
+        "클린벤치",
+        "PCR머신",
+        "원심분리기",
+        "세포호흡측정기"
+      ],
+      "reagents": [
+        "바이오사이틴",
+        "RPMI1640",
+        "Annexin V",
+        "TRIzol"
+      ]
+    },
+    {
+      "user_id": "user27",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "마이크로매니퓰레이터",
+        "HPLC",
+        "원심분리기",
+        "형광현미경"
+      ],
+      "reagents": [
+        "PBS",
+        "RPMI1640",
+        "TRIzol",
+        "FBS"
+      ]
+    },
+    {
+      "user_id": "user28",
+      "abstract": "암세포 내 신호전달 경로 억제 기전 연구",
+      "equipment": [
+        "원심분리기",
+        "마이크로매니퓰레이터",
+        "세포호흡측정기",
+        "HPLC"
+      ],
+      "reagents": [
+        "MitoTracker",
+        "프라이머",
+        "PBS",
+        "DMEM"
+      ]
+    },
+    {
+      "user_id": "user29",
+      "abstract": "줄기세포를 이용한 조직 재생 기전 분석",
+      "equipment": [
+        "PCR머신",
+        "질량분석기",
+        "형광현미경",
+        "전기영동장치"
+      ],
+      "reagents": [
+        "DNA 벡터",
+        "MitoTracker",
+        "사이토카인",
+        "Annexin V"
+      ]
+    },
+    {
+      "user_id": "user30",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "3D 바이오프린터",
+        "패치클램프",
+        "유세포분석기",
+        "인큐베이터"
+      ],
+      "reagents": [
+        "사이토카인",
+        "DNA 벡터",
+        "아가로스",
+        "프라이머"
+      ]
+    },
+    {
+      "user_id": "user31",
+      "abstract": "면역세포 활성화 경로 및 면역억제 기전 탐색",
+      "equipment": [
+        "패치클램프",
+        "원심분리기",
+        "오실로스코프",
+        "PCR머신"
+      ],
+      "reagents": [
+        "MitoTracker",
+        "사이토카인",
+        "TRIzol",
+        "RPMI1640"
+      ]
+    },
+    {
+      "user_id": "user32",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "전기영동장치",
+        "원심분리기",
+        "인큐베이터",
+        "3D 바이오프린터"
+      ],
+      "reagents": [
+        "DNA 벡터",
+        "아가로스",
+        "TTX",
+        "RPMI1640"
+      ]
+    },
+    {
+      "user_id": "user33",
+      "abstract": "단백질 상호작용 분석을 통한 질병 기전 규명 연구",
+      "equipment": [
+        "전기영동장치",
+        "패치클램프",
+        "PCR머신",
+        "질량분석기"
+      ],
+      "reagents": [
+        "GelMA",
+        "PBS",
+        "RPMI1640",
+        "Annexin V"
+      ]
+    },
+    {
+      "user_id": "user34",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "원심분리기",
+        "유세포분석기",
+        "HPLC",
+        "마이크로매니퓰레이터"
+      ],
+      "reagents": [
+        "트립신",
+        "PBS",
+        "MitoTracker",
+        "TRIzol"
+      ]
+    },
+    {
+      "user_id": "user35",
+      "abstract": "바이오마커 기반 조기 진단 기술 개발",
+      "equipment": [
+        "클린벤치",
+        "질량분석기",
+        "HPLC",
+        "패치클램프"
+      ],
+      "reagents": [
+        "DMSO",
+        "사이토카인",
+        "MitoTracker",
+        "PBS"
+      ]
+    },
+    {
+      "user_id": "user36",
+      "abstract": "줄기세포를 이용한 조직 재생 기전 분석",
+      "equipment": [
+        "형광현미경",
+        "PCR머신",
+        "3D 바이오프린터",
+        "오실로스코프"
+      ],
+      "reagents": [
+        "RPMI1640",
+        "아가로스",
+        "DMSO",
+        "DNA 벡터"
+      ]
+    },
+    {
+      "user_id": "user37",
+      "abstract": "줄기세포를 이용한 조직 재생 기전 분석",
+      "equipment": [
+        "인큐베이터",
+        "형광현미경",
+        "3D 바이오프린터",
+        "패치클램프"
+      ],
+      "reagents": [
+        "L-글루타민",
+        "글루타메이트",
+        "RPMI1640",
+        "아가로스"
+      ]
+    },
+    {
+      "user_id": "user38",
+      "abstract": "신경세포 분화 조절 메커니즘 규명",
+      "equipment": [
+        "원심분리기",
+        "클린벤치",
+        "세포호흡측정기",
+        "오실로스코프"
+      ],
+      "reagents": [
+        "L-글루타민",
+        "바이오사이틴",
+        "아가로스",
+        "GelMA"
+      ]
+    },
+    {
+      "user_id": "user39",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "전기영동장치",
+        "3D 바이오프린터",
+        "패치클램프",
+        "PCR머신"
+      ],
+      "reagents": [
+        "MitoTracker",
+        "PBS",
+        "TRIzol",
+        "사이토카인"
+      ]
+    },
+    {
+      "user_id": "user40",
+      "abstract": "세포 내 대사경로 변화를 이용한 신약 타겟 발굴",
+      "equipment": [
+        "형광현미경",
+        "유세포분석기",
+        "패치클램프",
+        "인큐베이터"
+      ],
+      "reagents": [
+        "MitoTracker",
+        "RPMI1640",
+        "TRIzol",
+        "아가로스"
+      ]
+    },
+    {
+      "user_id": "user41",
+      "abstract": "신경세포 분화 조절 메커니즘 규명",
+      "equipment": [
+        "인큐베이터",
+        "오실로스코프",
+        "PCR머신",
+        "형광현미경"
+      ],
+      "reagents": [
+        "프라이머",
+        "트립신",
+        "Annexin V",
+        "글루타메이트"
+      ]
+    },
+    {
+      "user_id": "user42",
+      "abstract": "줄기세포를 이용한 조직 재생 기전 분석",
+      "equipment": [
+        "패치클램프",
+        "전기영동장치",
+        "원심분리기",
+        "질량분석기"
+      ],
+      "reagents": [
+        "아가로스",
+        "글루타메이트",
+        "사이토카인",
+        "트립신"
+      ]
+    },
+    {
+      "user_id": "user43",
+      "abstract": "줄기세포를 이용한 조직 재생 기전 분석",
+      "equipment": [
+        "마이크로매니퓰레이터",
+        "세포호흡측정기",
+        "HPLC",
+        "전기영동장치"
+      ],
+      "reagents": [
+        "항체",
+        "프라이머",
+        "DNA 벡터",
+        "아가로스"
+      ]
+    },
+    {
+      "user_id": "user44",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "질량분석기",
+        "HPLC",
+        "인큐베이터",
+        "마이크로매니퓰레이터"
+      ],
+      "reagents": [
+        "DMSO",
+        "아가로스",
+        "Annexin V",
+        "프라이머"
+      ]
+    },
+    {
+      "user_id": "user45",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "패치클램프",
+        "형광현미경",
+        "질량분석기",
+        "원심분리기"
+      ],
+      "reagents": [
+        "GelMA",
+        "바이오사이틴",
+        "RPMI1640",
+        "사이토카인"
+      ]
+    },
+    {
+      "user_id": "user46",
+      "abstract": "단백질 상호작용 분석을 통한 질병 기전 규명 연구",
+      "equipment": [
+        "패치클램프",
+        "인큐베이터",
+        "HPLC",
+        "3D 바이오프린터"
+      ],
+      "reagents": [
+        "아가로스",
+        "프라이머",
+        "L-글루타민",
+        "FBS"
+      ]
+    },
+    {
+      "user_id": "user47",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "마이크로매니퓰레이터",
+        "전기영동장치",
+        "질량분석기",
+        "오실로스코프"
+      ],
+      "reagents": [
+        "글루타메이트",
+        "DNA 벡터",
+        "바이오사이틴",
+        "TRIzol"
+      ]
+    },
+    {
+      "user_id": "user48",
+      "abstract": "줄기세포를 이용한 조직 재생 기전 분석",
+      "equipment": [
+        "클린벤치",
+        "질량분석기",
+        "전기영동장치",
+        "3D 바이오프린터"
+      ],
+      "reagents": [
+        "TTX",
+        "트립신",
+        "RPMI1640",
+        "GelMA"
+      ]
+    },
+    {
+      "user_id": "user49",
+      "abstract": "바이오마커 기반 조기 진단 기술 개발",
+      "equipment": [
+        "전기영동장치",
+        "3D 바이오프린터",
+        "패치클램프",
+        "인큐베이터"
+      ],
+      "reagents": [
+        "RPMI1640",
+        "PBS",
+        "DMSO",
+        "사이토카인"
+      ]
+    },
+    {
+      "user_id": "user50",
+      "abstract": "세포 내 대사경로 변화를 이용한 신약 타겟 발굴",
+      "equipment": [
+        "질량분석기",
+        "원심분리기",
+        "마이크로매니퓰레이터",
+        "PCR머신"
+      ],
+      "reagents": [
+        "RPMI1640",
+        "Annexin V",
+        "DMSO",
+        "TRIzol"
+      ]
+    },
+    {
+      "user_id": "user51",
+      "abstract": "단백질 상호작용 분석을 통한 질병 기전 규명 연구",
+      "equipment": [
+        "인큐베이터",
+        "3D 바이오프린터",
+        "전기영동장치",
+        "유세포분석기"
+      ],
+      "reagents": [
+        "TRIzol",
+        "MitoTracker",
+        "Annexin V",
+        "PBS"
+      ]
+    },
+    {
+      "user_id": "user52",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "전기영동장치",
+        "인큐베이터",
+        "질량분석기",
+        "오실로스코프"
+      ],
+      "reagents": [
+        "DMSO",
+        "FBS",
+        "DMEM",
+        "글루타메이트"
+      ]
+    },
+    {
+      "user_id": "user53",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "유세포분석기",
+        "질량분석기",
+        "세포호흡측정기",
+        "클린벤치"
+      ],
+      "reagents": [
+        "L-글루타민",
+        "MitoTracker",
+        "TRIzol",
+        "PBS"
+      ]
+    },
+    {
+      "user_id": "user54",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "전기영동장치",
+        "인큐베이터",
+        "세포호흡측정기",
+        "원심분리기"
+      ],
+      "reagents": [
+        "L-글루타민",
+        "아가로스",
+        "FBS",
+        "Annexin V"
+      ]
+    },
+    {
+      "user_id": "user55",
+      "abstract": "바이오마커 기반 조기 진단 기술 개발",
+      "equipment": [
+        "PCR머신",
+        "마이크로매니퓰레이터",
+        "인큐베이터",
+        "HPLC"
+      ],
+      "reagents": [
+        "TTX",
+        "글루타메이트",
+        "항체",
+        "프라이머"
+      ]
+    },
+    {
+      "user_id": "user56",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "세포호흡측정기",
+        "전기영동장치",
+        "PCR머신",
+        "패치클램프"
+      ],
+      "reagents": [
+        "트립신",
+        "TTX",
+        "사이토카인",
+        "PBS"
+      ]
+    },
+    {
+      "user_id": "user57",
+      "abstract": "암세포 내 신호전달 경로 억제 기전 연구",
+      "equipment": [
+        "클린벤치",
+        "패치클램프",
+        "질량분석기",
+        "유세포분석기"
+      ],
+      "reagents": [
+        "Annexin V",
+        "PBS",
+        "DMEM",
+        "MitoTracker"
+      ]
+    },
+    {
+      "user_id": "user58",
+      "abstract": "암세포 내 신호전달 경로 억제 기전 연구",
+      "equipment": [
+        "HPLC",
+        "오실로스코프",
+        "원심분리기",
+        "3D 바이오프린터"
+      ],
+      "reagents": [
+        "FBS",
+        "Annexin V",
+        "아가로스",
+        "PBS"
+      ]
+    },
+    {
+      "user_id": "user59",
+      "abstract": "신경세포 분화 조절 메커니즘 규명",
+      "equipment": [
+        "질량분석기",
+        "원심분리기",
+        "유세포분석기",
+        "3D 바이오프린터"
+      ],
+      "reagents": [
+        "TRIzol",
+        "사이토카인",
+        "글루타메이트",
+        "DMSO"
+      ]
+    },
+    {
+      "user_id": "user60",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "질량분석기",
+        "클린벤치",
+        "마이크로매니퓰레이터",
+        "3D 바이오프린터"
+      ],
+      "reagents": [
+        "GelMA",
+        "항체",
+        "MitoTracker",
+        "TTX"
+      ]
+    },
+    {
+      "user_id": "user61",
+      "abstract": "신경세포 분화 조절 메커니즘 규명",
+      "equipment": [
+        "마이크로매니퓰레이터",
+        "오실로스코프",
+        "인큐베이터",
+        "원심분리기"
+      ],
+      "reagents": [
+        "글루타메이트",
+        "PBS",
+        "프라이머",
+        "FBS"
+      ]
+    },
+    {
+      "user_id": "user62",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "3D 바이오프린터",
+        "클린벤치",
+        "PCR머신",
+        "원심분리기"
+      ],
+      "reagents": [
+        "DMEM",
+        "사이토카인",
+        "RPMI1640",
+        "프라이머"
+      ]
+    },
+    {
+      "user_id": "user63",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "PCR머신",
+        "유세포분석기",
+        "형광현미경",
+        "전기영동장치"
+      ],
+      "reagents": [
+        "RPMI1640",
+        "DMEM",
+        "트립신",
+        "사이토카인"
+      ]
+    },
+    {
+      "user_id": "user64",
+      "abstract": "면역세포 활성화 경로 및 면역억제 기전 탐색",
+      "equipment": [
+        "전기영동장치",
+        "질량분석기",
+        "인큐베이터",
+        "세포호흡측정기"
+      ],
+      "reagents": [
+        "RPMI1640",
+        "프라이머",
+        "L-글루타민",
+        "GelMA"
+      ]
+    },
+    {
+      "user_id": "user65",
+      "abstract": "줄기세포를 이용한 조직 재생 기전 분석",
+      "equipment": [
+        "HPLC",
+        "3D 바이오프린터",
+        "형광현미경",
+        "마이크로매니퓰레이터"
+      ],
+      "reagents": [
+        "바이오사이틴",
+        "글루타메이트",
+        "L-글루타민",
+        "FBS"
+      ]
+    },
+    {
+      "user_id": "user66",
+      "abstract": "단백질 상호작용 분석을 통한 질병 기전 규명 연구",
+      "equipment": [
+        "3D 바이오프린터",
+        "패치클램프",
+        "클린벤치",
+        "전기영동장치"
+      ],
+      "reagents": [
+        "PBS",
+        "Annexin V",
+        "글루타메이트",
+        "MitoTracker"
+      ]
+    },
+    {
+      "user_id": "user67",
+      "abstract": "면역세포 활성화 경로 및 면역억제 기전 탐색",
+      "equipment": [
+        "전기영동장치",
+        "마이크로매니퓰레이터",
+        "PCR머신",
+        "클린벤치"
+      ],
+      "reagents": [
+        "아가로스",
+        "FBS",
+        "GelMA",
+        "트립신"
+      ]
+    },
+    {
+      "user_id": "user68",
+      "abstract": "바이오마커 기반 조기 진단 기술 개발",
+      "equipment": [
+        "유세포분석기",
+        "원심분리기",
+        "클린벤치",
+        "인큐베이터"
+      ],
+      "reagents": [
+        "RPMI1640",
+        "바이오사이틴",
+        "아가로스",
+        "MitoTracker"
+      ]
+    },
+    {
+      "user_id": "user69",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "질량분석기",
+        "마이크로매니퓰레이터",
+        "유세포분석기",
+        "패치클램프"
+      ],
+      "reagents": [
+        "트립신",
+        "MitoTracker",
+        "DNA 벡터",
+        "글루타메이트"
+      ]
+    },
+    {
+      "user_id": "user70",
+      "abstract": "3D 세포 배양 시스템을 이용한 약물 반응 분석",
+      "equipment": [
+        "오실로스코프",
+        "3D 바이오프린터",
+        "질량분석기",
+        "원심분리기"
+      ],
+      "reagents": [
+        "트립신",
+        "PBS",
+        "MitoTracker",
+        "TRIzol"
+      ]
+    },
+    {
+      "user_id": "user71",
+      "abstract": "면역세포 활성화 경로 및 면역억제 기전 탐색",
+      "equipment": [
+        "세포호흡측정기",
+        "오실로스코프",
+        "클린벤치",
+        "마이크로매니퓰레이터"
+      ],
+      "reagents": [
+        "GelMA",
+        "DMSO",
+        "DMEM",
+        "트립신"
+      ]
+    },
+    {
+      "user_id": "user72",
+      "abstract": "세포 내 대사경로 변화를 이용한 신약 타겟 발굴",
+      "equipment": [
+        "패치클램프",
+        "3D 바이오프린터",
+        "세포호흡측정기",
+        "전기영동장치"
+      ],
+      "reagents": [
+        "글루타메이트",
+        "TRIzol",
+        "트립신",
+        "Annexin V"
+      ]
+    },
+    {
+      "user_id": "user73",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "오실로스코프",
+        "HPLC",
+        "패치클램프",
+        "PCR머신"
+      ],
+      "reagents": [
+        "DMSO",
+        "L-글루타민",
+        "Annexin V",
+        "RPMI1640"
+      ]
+    },
+    {
+      "user_id": "user74",
+      "abstract": "바이오마커 기반 조기 진단 기술 개발",
+      "equipment": [
+        "유세포분석기",
+        "패치클램프",
+        "클린벤치",
+        "마이크로매니퓰레이터"
+      ],
+      "reagents": [
+        "아가로스",
+        "FBS",
+        "Annexin V",
+        "TTX"
+      ]
+    },
+    {
+      "user_id": "user75",
+      "abstract": "단백질 상호작용 분석을 통한 질병 기전 규명 연구",
+      "equipment": [
+        "질량분석기",
+        "인큐베이터",
+        "마이크로매니퓰레이터",
+        "오실로스코프"
+      ],
+      "reagents": [
+        "DNA 벡터",
+        "글루타메이트",
+        "항체",
+        "아가로스"
+      ]
+    },
+    {
+      "user_id": "user76",
+      "abstract": "단백질 상호작용 분석을 통한 질병 기전 규명 연구",
+      "equipment": [
+        "유세포분석기",
+        "형광현미경",
+        "인큐베이터",
+        "클린벤치"
+      ],
+      "reagents": [
+        "글루타메이트",
+        "PBS",
+        "사이토카인",
+        "항체"
+      ]
+    },
+    {
+      "user_id": "user77",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "3D 바이오프린터",
+        "형광현미경",
+        "클린벤치",
+        "질량분석기"
+      ],
+      "reagents": [
+        "TRIzol",
+        "FBS",
+        "사이토카인",
+        "TTX"
+      ]
+    },
+    {
+      "user_id": "user78",
+      "abstract": "바이오마커 기반 조기 진단 기술 개발",
+      "equipment": [
+        "3D 바이오프린터",
+        "HPLC",
+        "인큐베이터",
+        "질량분석기"
+      ],
+      "reagents": [
+        "Annexin V",
+        "아가로스",
+        "트립신",
+        "DNA 벡터"
+      ]
+    },
+    {
+      "user_id": "user79",
+      "abstract": "면역세포 활성화 경로 및 면역억제 기전 탐색",
+      "equipment": [
+        "클린벤치",
+        "전기영동장치",
+        "3D 바이오프린터",
+        "HPLC"
+      ],
+      "reagents": [
+        "L-글루타민",
+        "바이오사이틴",
+        "PBS",
+        "GelMA"
+      ]
+    },
+    {
+      "user_id": "user80",
+      "abstract": "3D 세포 배양 시스템을 이용한 약물 반응 분석",
+      "equipment": [
+        "3D 바이오프린터",
+        "인큐베이터",
+        "마이크로매니퓰레이터",
+        "원심분리기"
+      ],
+      "reagents": [
+        "DMSO",
+        "Annexin V",
+        "사이토카인",
+        "바이오사이틴"
+      ]
+    },
+    {
+      "user_id": "user81",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "클린벤치",
+        "질량분석기",
+        "인큐베이터",
+        "원심분리기"
+      ],
+      "reagents": [
+        "TTX",
+        "PBS",
+        "DMSO",
+        "GelMA"
+      ]
+    },
+    {
+      "user_id": "user82",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "유세포분석기",
+        "원심분리기",
+        "전기영동장치",
+        "HPLC"
+      ],
+      "reagents": [
+        "L-글루타민",
+        "TRIzol",
+        "Annexin V",
+        "사이토카인"
+      ]
+    },
+    {
+      "user_id": "user83",
+      "abstract": "세포 내 대사경로 변화를 이용한 신약 타겟 발굴",
+      "equipment": [
+        "오실로스코프",
+        "원심분리기",
+        "HPLC",
+        "세포호흡측정기"
+      ],
+      "reagents": [
+        "글루타메이트",
+        "프라이머",
+        "트립신",
+        "DMSO"
+      ]
+    },
+    {
+      "user_id": "user84",
+      "abstract": "3D 세포 배양 시스템을 이용한 약물 반응 분석",
+      "equipment": [
+        "원심분리기",
+        "패치클램프",
+        "인큐베이터",
+        "PCR머신"
+      ],
+      "reagents": [
+        "FBS",
+        "글루타메이트",
+        "RPMI1640",
+        "프라이머"
+      ]
+    },
+    {
+      "user_id": "user85",
+      "abstract": "면역세포 활성화 경로 및 면역억제 기전 탐색",
+      "equipment": [
+        "HPLC",
+        "PCR머신",
+        "3D 바이오프린터",
+        "질량분석기"
+      ],
+      "reagents": [
+        "MitoTracker",
+        "DMSO",
+        "TRIzol",
+        "Annexin V"
+      ]
+    },
+    {
+      "user_id": "user86",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "클린벤치",
+        "원심분리기",
+        "유세포분석기",
+        "3D 바이오프린터"
+      ],
+      "reagents": [
+        "글루타메이트",
+        "MitoTracker",
+        "DMEM",
+        "DNA 벡터"
+      ]
+    },
+    {
+      "user_id": "user87",
+      "abstract": "세포 내 대사경로 변화를 이용한 신약 타겟 발굴",
+      "equipment": [
+        "형광현미경",
+        "3D 바이오프린터",
+        "마이크로매니퓰레이터",
+        "PCR머신"
+      ],
+      "reagents": [
+        "RPMI1640",
+        "L-글루타민",
+        "DMSO",
+        "MitoTracker"
+      ]
+    },
+    {
+      "user_id": "user88",
+      "abstract": "바이오마커 기반 조기 진단 기술 개발",
+      "equipment": [
+        "질량분석기",
+        "마이크로매니퓰레이터",
+        "3D 바이오프린터",
+        "PCR머신"
+      ],
+      "reagents": [
+        "바이오사이틴",
+        "TTX",
+        "L-글루타민",
+        "GelMA"
+      ]
+    },
+    {
+      "user_id": "user89",
+      "abstract": "단백질 상호작용 분석을 통한 질병 기전 규명 연구",
+      "equipment": [
+        "클린벤치",
+        "질량분석기",
+        "세포호흡측정기",
+        "유세포분석기"
+      ],
+      "reagents": [
+        "글루타메이트",
+        "DMSO",
+        "MitoTracker",
+        "항체"
+      ]
+    },
+    {
+      "user_id": "user90",
+      "abstract": "유전자 편집을 통한 질병 모델 개발",
+      "equipment": [
+        "클린벤치",
+        "세포호흡측정기",
+        "오실로스코프",
+        "유세포분석기"
+      ],
+      "reagents": [
+        "DMSO",
+        "DNA 벡터",
+        "FBS",
+        "글루타메이트"
+      ]
+    },
+    {
+      "user_id": "user91",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "원심분리기",
+        "3D 바이오프린터",
+        "형광현미경",
+        "클린벤치"
+      ],
+      "reagents": [
+        "사이토카인",
+        "MitoTracker",
+        "FBS",
+        "Annexin V"
+      ]
+    },
+    {
+      "user_id": "user92",
+      "abstract": "세포 내 대사경로 변화를 이용한 신약 타겟 발굴",
+      "equipment": [
+        "유세포분석기",
+        "클린벤치",
+        "질량분석기",
+        "전기영동장치"
+      ],
+      "reagents": [
+        "프라이머",
+        "GelMA",
+        "글루타메이트",
+        "항체"
+      ]
+    },
+    {
+      "user_id": "user93",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "오실로스코프",
+        "인큐베이터",
+        "마이크로매니퓰레이터",
+        "질량분석기"
+      ],
+      "reagents": [
+        "RPMI1640",
+        "DNA 벡터",
+        "DMSO",
+        "사이토카인"
+      ]
+    },
+    {
+      "user_id": "user94",
+      "abstract": "세포 내 대사경로 변화를 이용한 신약 타겟 발굴",
+      "equipment": [
+        "유세포분석기",
+        "HPLC",
+        "패치클램프",
+        "원심분리기"
+      ],
+      "reagents": [
+        "TRIzol",
+        "FBS",
+        "RPMI1640",
+        "DNA 벡터"
+      ]
+    },
+    {
+      "user_id": "user95",
+      "abstract": "항체 기반 면역치료제 개발 연구",
+      "equipment": [
+        "전기영동장치",
+        "PCR머신",
+        "HPLC",
+        "유세포분석기"
+      ],
+      "reagents": [
+        "사이토카인",
+        "MitoTracker",
+        "FBS",
+        "PBS"
+      ]
+    },
+    {
+      "user_id": "user96",
+      "abstract": "3D 세포 배양 시스템을 이용한 약물 반응 분석",
+      "equipment": [
+        "인큐베이터",
+        "유세포분석기",
+        "원심분리기",
+        "오실로스코프"
+      ],
+      "reagents": [
+        "GelMA",
+        "MitoTracker",
+        "트립신",
+        "프라이머"
+      ]
+    },
+    {
+      "user_id": "user97",
+      "abstract": "암세포 내 신호전달 경로 억제 기전 연구",
+      "equipment": [
+        "세포호흡측정기",
+        "형광현미경",
+        "클린벤치",
+        "3D 바이오프린터"
+      ],
+      "reagents": [
+        "TTX",
+        "DMEM",
+        "트립신",
+        "FBS"
+      ]
+    },
+    {
+      "user_id": "user98",
+      "abstract": "암세포 내 신호전달 경로 억제 기전 연구",
+      "equipment": [
+        "질량분석기",
+        "형광현미경",
+        "패치클램프",
+        "마이크로매니퓰레이터"
+      ],
+      "reagents": [
+        "프라이머",
+        "L-글루타민",
+        "아가로스",
+        "Annexin V"
+      ]
+    },
+    {
+      "user_id": "user99",
+      "abstract": "줄기세포를 이용한 조직 재생 기전 분석",
+      "equipment": [
+        "원심분리기",
+        "PCR머신",
+        "형광현미경",
+        "클린벤치"
+      ],
+      "reagents": [
+        "DNA 벡터",
+        "TRIzol",
+        "사이토카인",
+        "MitoTracker"
+      ]
+    },
+    {
+      "user_id": "user100",
+      "abstract": "단백질 상호작용 분석을 통한 질병 기전 규명 연구",
+      "equipment": [
+        "3D 바이오프린터",
+        "질량분석기",
+        "전기영동장치",
+        "원심분리기"
+      ],
+      "reagents": [
+        "Annexin V",
+        "프라이머",
+        "바이오사이틴",
+        "MitoTracker"
+      ]
+    }
+  ]
