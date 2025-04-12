@@ -1,10 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Networking from './pages/Networking';
 import MyPage from './pages/MyPage';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import { useAuthStore } from './store/authStore';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const { isAuthenticated, logout } = useAuthStore();
+  const [isLoggedIn, setIsLoggedIn] = useState(isAuthenticated);
+
+  // isAuthenticated 상태가 변경될 때 isLoggedIn 상태도 업데이트
+  useEffect(() => {
+    setIsLoggedIn(isAuthenticated);
+  }, [isAuthenticated]);
 
   return (
     <Router>
@@ -28,21 +38,27 @@ function App() {
                 {isLoggedIn ? (
                   <button 
                     className="text-gray-700 hover:text-blue-600"
-                    onClick={() => setIsLoggedIn(false)}
+                    onClick={() => {
+                      logout();
+                      setIsLoggedIn(false);
+                    }}
                   >
                     로그아웃
                   </button>
                 ) : (
                   <>
-                    <button 
+                    <Link 
+                      to="/login" 
                       className="text-gray-700 hover:text-blue-600"
-                      onClick={() => setIsLoggedIn(true)}
                     >
                       로그인
-                    </button>
-                    <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+                    </Link>
+                    <Link 
+                      to="/signup" 
+                      className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+                    >
                       회원가입
-                    </button>
+                    </Link>
                   </>
                 )}
               </div>
@@ -52,8 +68,18 @@ function App() {
 
         {/* Routes */}
         <Routes>
-          <Route path="/networking" element={<Networking />} />
-          <Route path="/mypage" element={<MyPage />} />
+          <Route path="/networking" element={
+            <ProtectedRoute>
+              <Networking />
+            </ProtectedRoute>
+          } />
+          <Route path="/mypage" element={
+            <ProtectedRoute>
+              <MyPage />
+            </ProtectedRoute>
+          } />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/" element={<div>Home - Coming Soon</div>} />
         </Routes>
       </div>
