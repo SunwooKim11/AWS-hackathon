@@ -2,6 +2,10 @@ from scholarly import scholarly
 from scidownl import scihub_download
 import os
 import PyPDF2
+import json
+from pydantic import BaseModel
+from typing import List, Optional
+
 from openai import OpenAI
 from dotenv import load_dotenv
 
@@ -11,11 +15,48 @@ load_dotenv()
 tmp_dir = './paperTmp/'
 APIKEY = os.getenv('OPENAI_API_KEY')  # 환경 변수에서 API 키 로드
 PROMPT = '''
-다음 논문을 참고하여, 어떤 주제를 다루고 목적이 무엇인지 파악하고 특히 실험 상세 설명 부분을 중점적으로 분석하여, 해당 연구자들이 해당 연구와 유사하거나 연관된 실험에 참가 할 때 참고할 수 있도록, 어떤 기기를 활용하고, 어떤 시약을 사용하여 실험을 진행했는지에 대해 500자내로 포함되게 정리 해줘.
-    연구 주제 및 목적:
-    사용한 기기:
-    사용한 시약:
+Please refer to the following paper and summarize what topics are covered and what the purpose is. In particular, focus on the detailed explanation of the experiment and organize the following in the JSON format about what equipment and reagents were used for the experiment so that the researchers can refer to when participating in an experiment similar to or related to the study.
+    title:
+    overview:
+    equipments:
+    reagents:
 '''
+
+functions = [
+    {
+        "name": "analyze_paper",
+        "description": "analyze publications for extract given information",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "description": "Title of the paper"
+                },
+                "overview": {
+                    "type": "string",
+                    "description": "Based on abstract, overview of the research"
+                },
+                "equipments": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Equipments used for experiments"
+                },
+                "reagents": {
+                    "type": "array",
+                    "items": {
+                    "type": "string"  
+                    },
+                    "description": "Reagents used for experiments"
+                },
+            },
+            "required": ["title", "overview", "equipments", "reagents"]
+        }
+    }
+]
+
 
 def read_pdf(file_path):
     '''Read PDF and return text'''
@@ -32,18 +73,27 @@ def openai_api(text):
         
     client = OpenAI(api_key=APIKEY)
     
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": "You are a helpful research paper analyzer."},
-            {"role": "user", "content": f"{PROMPT}\n\n Content:\n{text}"}
-        ],
-        max_tokens=1000
-    )
-    
-    return response.choices[0].message.content
+    try:
+      response = client.chat.completions.create(
+          model="gpt-4o-mini",
+          messages=[
+              {"role": "system", "content": "You are a helpful research paper analyzer."},
+              {"role": "user", "content": f"{PROMPT}\n\n Content:\n{text}"}
+          ],
+          max_tokens=1000,
+          functions=functions,
+          function_call={"name": "analyze_paper"}
+      )
+      if response.choices[0].message.function_call:
+            result = json.loads(response.choices[0].message.function_call.arguments)
+            print(json.dumps(result, indent=2, ensure_ascii=False))
+            print("-------------------------------------------------------------------------------------")
+            return result
+    except Exception as e:
+        print(f"Error during analysis: {str(e)}")
+        return None
 
-def analyze_author(id, prompt=PROMPT, out=tmp_dir, max_download=5):
+def analyze_author(id, prompt=PROMPT, out=tmp_dir, max_download=2):
     """논문을 다운로드하고 요약합니다."""
     search_query = scholarly.search_author_id(id)
     author = scholarly.fill(search_query)
@@ -73,7 +123,8 @@ def analyze_author(id, prompt=PROMPT, out=tmp_dir, max_download=5):
         # 요약 결과를 리스트에 추가
         summaries.append(summary)
         
-        print(f"분석: {summary}")
+        # print(f"분석: {summary}")
+
     
     # 분석이 완료된 후 paperTmp 디렉토리 비우기
     for file in os.listdir(out):
