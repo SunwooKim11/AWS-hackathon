@@ -17,7 +17,7 @@ class Recommender:
         """사용자 데이터 로드"""
         try:
             current_dir = os.path.dirname(os.path.abspath(__file__))
-            data_path = os.path.join(current_dir, 'data', 'users.json')
+            data_path = os.path.join(current_dir, '../data/users.json')
             print(f"Loading data from: {data_path}")  # 디버깅용
             
             with open(data_path, 'r', encoding='utf-8') as f:
@@ -83,4 +83,4 @@ class Recommender:
 
     def get_similar_users(self, user_id: str, n_similar: int = 5) -> List[Dict[str, Any]]:
         """유사한 사용자 찾기"""
-        return self.get_recommendations(user_id, n_similar) 
+        return self.get_recommendations(user_id, n_similar)
