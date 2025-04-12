@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import axios from 'axios';
 
 interface ResearchItem {
   title: string;
@@ -20,9 +21,112 @@ interface Researcher {
   past_research: ResearchItem[];
 }
 
+// 더미 데이터
+const DUMMY_DATA = [
+  {
+    "user_id": "user1",
+    "name": "김이나",
+    "affiliation": "서울대학교 의과대학",
+    "google_scholar_id": "mzFEJVIAAAAJ",
+    "linkedin": "https://linkedin.com/in/researcher-kim",
+    "papers": [
+      {
+        "title": "줄기세포 재생 메커니즘",
+        "abstract": "신호전달 기전 탐색",
+        "year": 2023,
+        "journal": "Neuroscience Research",
+        "doi": "10.8093/abc.299",
+        "authors": [
+          "조생명",
+          "장백신",
+          "박세포"
+        ],
+        "equipments": [
+          "형광현미경",
+          "오실로스코프",
+          "원심분리기",
+          "PCR머신"
+        ],
+        "reagents": [
+          "FBS",
+          "트립신",
+          "항체"
+        ],
+        "vector_embedding_id": null,
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "user_id": "user2",
+    "name": "이바이오",
+    "affiliation": "KAIST 생명과학과",
+    "google_scholar_id": "kzABCDEAAAAJ",
+    "linkedin": "https://linkedin.com/in/bio-lee",
+    "papers": [
+      {
+        "title": "면역세포 활성화와 면역억제 연구",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2025,
+        "journal": "Biochemical Journal",
+        "doi": null,
+        "authors": [
+          "이신경",
+          "홍길동"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "원심분리기",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "프라이머",
+          "사이토카인",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": "vec_d60d4a35",
+        "score": 0.75
+      }
+    ]
+  },
+  {
+    "user_id": "user3",
+    "name": "박헬스",
+    "affiliation": "연세대학교 의공학과",
+    "linkedin": "https://linkedin.com/in/health-park",
+    "papers": [
+      {
+        "title": "백신 면역 반응 분석",
+        "abstract": "세포 경로 및 조절 메커니즘 규명",
+        "year": 2021,
+        "journal": "Neuroscience Research",
+        "doi": null,
+        "authors": [
+          "윤분자",
+          "홍길동"
+        ],
+        "equipments": [
+          "유세포분석기",
+          "마이크로매니퓰레이터"
+        ],
+        "reagents": [
+          "트립신",
+          "DNA 벡터"
+        ],
+        "vector_embedding_id": null,
+        "score": 0.65
+      }
+    ]
+  }
+];
+
 export function Networking() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedResearcher, setSelectedResearcher] = useState<number | null>(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState<any[]>([]);
+  const [isSearching, setIsSearching] = useState(false);
+  const [showResults, setShowResults] = useState(false);
 
   const researchers: Researcher[] = [
     {
@@ -193,6 +297,42 @@ export function Networking() {
     </div>
   );
 
+  const handleSearch = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!searchQuery.trim()) return;
+
+    setIsSearching(true);
+    setShowResults(true);
+
+    try {
+      console.log('검색 요청:', searchQuery);
+      
+      // 백엔드 API 호출 대신 더미 데이터 사용
+      // const response = await axios.get(`http://localhost:8000/api/v1/search?query=${encodeURIComponent(searchQuery)}`);
+      // console.log('검색 응답:', response.data);
+      // setSearchResults(response.data);
+      
+      // 더미 데이터로 검색 결과 생성
+      const keywords = searchQuery.toLowerCase().split(' ');
+      const results = DUMMY_DATA.filter(user => {
+        return user.papers.some(paper => {
+          const title = paper.title.toLowerCase();
+          const abstract = paper.abstract.toLowerCase();
+          return keywords.some(keyword => 
+            title.includes(keyword) || abstract.includes(keyword)
+          );
+        });
+      });
+      
+      console.log('더미 검색 결과:', results);
+      setSearchResults(results);
+    } catch (err) {
+      console.error('검색 중 오류 발생:', err);
+    } finally {
+      setIsSearching(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Sub Header */}
@@ -206,18 +346,164 @@ export function Networking() {
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold text-gray-800 mb-2">관심있는 연구를 검색해보세요!</h1>
           </div>
-          <div className="relative">
+          <form onSubmit={handleSearch} className="relative">
             <input
               type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="관심있는 연구를 검색해보세요"
               className="w-full p-4 pr-16 border rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
-            <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white w-12 h-12 rounded-full hover:bg-blue-700 text-lg font-semibold transition-colors flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
+            <button 
+              type="submit"
+              disabled={isSearching || !searchQuery.trim()}
+              className={`absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white w-12 h-12 rounded-full hover:bg-blue-700 text-lg font-semibold transition-colors flex items-center justify-center ${
+                isSearching || !searchQuery.trim() ? 'opacity-50 cursor-not-allowed' : ''
+              }`}
+            >
+              {isSearching ? (
+                <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              )}
             </button>
-          </div>
+          </form>
+          
+          {/* 검색 결과 표시 */}
+          {showResults && (
+            <div className="mt-8">
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">검색 결과</h2>
+              {searchResults.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {searchResults.map((result, index) => (
+                    <div 
+                      key={index} 
+                      className={`bg-white p-6 rounded-lg border shadow-sm hover:shadow-md transition-all cursor-pointer
+                        ${selectedResearcher === index ? 'fixed inset-4 md:inset-20 z-50 overflow-y-auto' : ''}`}
+                      onClick={() => setSelectedResearcher(selectedResearcher === index ? null : index)}
+                    >
+                      <div className="flex items-center mb-4 relative">
+                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+                          {result.name ? result.name.charAt(0) : result.user_id.charAt(0).toUpperCase()}
+                        </div>
+                        <div className="ml-4">
+                          <h3 className="font-semibold text-lg">{result.name || `연구자 ${result.user_id}`}</h3>
+                          <p className="text-sm text-gray-500">{result.affiliation || '소속 미입력'}</p>
+                        </div>
+                        
+                        {selectedResearcher === index && (
+                          <button 
+                            className="absolute top-0 right-0 text-gray-500 hover:text-gray-700"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedResearcher(null);
+                            }}
+                          >
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                          </button>
+                        )}
+                      </div>
+                      
+                      {/* Extended Information (only shown when selected) */}
+                      {selectedResearcher === index && (
+                        <div className="mt-6 pt-6 border-t">
+                          <div className="space-y-6">
+                            <div className="space-y-6">
+                              <h4 className="font-semibold text-gray-700 mb-2">연구 논문</h4>
+                              {result.papers.map((paper: any, paperIndex: number) => (
+                                <div key={paperIndex} className="bg-blue-50 p-4 rounded-lg">
+                                  <h5 className="font-medium text-blue-700 mb-2">{paper.title}</h5>
+                                  <p className="text-gray-600 mb-2">{paper.abstract}</p>
+                                  
+                                  {paper.equipments && paper.equipments.length > 0 && (
+                                    <div className="mt-4">
+                                      <h6 className="text-sm font-medium text-gray-700 mb-2 flex items-center">
+                                        <svg className="w-4 h-4 mr-1 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                                        </svg>
+                                        사용기기
+                                      </h6>
+                                      <div className="flex flex-wrap gap-2">
+                                        {paper.equipments.map((equipment: string, i: number) => (
+                                          <span key={i} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
+                                            {equipment}
+                                          </span>
+                                        ))}
+                                      </div>
+                                    </div>
+                                  )}
+                                  
+                                  {paper.reagents && paper.reagents.length > 0 && (
+                                    <div className="mt-4">
+                                      <h6 className="text-sm font-medium text-gray-700 mb-2 flex items-center">
+                                        <svg className="w-4 h-4 mr-1 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                                        </svg>
+                                        사용시약 및 리소스
+                                      </h6>
+                                      <div className="flex flex-wrap gap-2">
+                                        {paper.reagents.map((reagent: string, i: number) => (
+                                          <span key={i} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
+                                            {reagent}
+                                          </span>
+                                        ))}
+                                      </div>
+                                    </div>
+                                  )}
+                                </div>
+                              ))}
+                            </div>
+                            <div className="flex flex-wrap gap-4 justify-center pt-6 border-t">
+                              {result.google_scholar_id && (
+                                <a 
+                                  href={`https://scholar.google.com/citations?user=${result.google_scholar_id}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="flex items-center gap-2 text-blue-600 hover:text-blue-700"
+                                >
+                                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5 12 0z"/>
+                                  </svg>
+                                  Google Scholar
+                                </a>
+                              )}
+                              {result.linkedin && (
+                                <a 
+                                  href={result.linkedin}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="flex items-center gap-2 text-blue-600 hover:text-blue-700"
+                                >
+                                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                  </svg>
+                                  LinkedIn
+                                </a>
+                              )}
+                            </div>
+                            <div className="mt-6 flex justify-center">
+                              <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
+                                연구자와 대화하기
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-8">
+                  <p className="text-gray-500">검색 결과가 없습니다. 다른 키워드로 검색해보세요.</p>
+                </div>
+              )}
+            </div>
+          )}
+          
           <div className="w-full border-t border-gray-300 mt-12"></div>
           
           {/* Dropdown Section */}
