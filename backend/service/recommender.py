@@ -37,6 +37,7 @@ class Recommender:
         # 각 사용자의 프로필을 하나의 문자열로 결합
         user_profiles = []
         for user in self.users:
+
             # 사용자의 모든 논문 정보를 결합
             profile_text = ""
             for paper in user.get("papers", []):
@@ -55,6 +56,7 @@ class Recommender:
         if not user_profiles:
             print("No valid user profiles found")
             return
+
 
         # TF-IDF 기반 벡터화
         self.vectorizer = TfidfVectorizer(max_features=self.vector_dim)
@@ -88,10 +90,12 @@ class Recommender:
         recommendations = []
         for idx in similar_indices:
             user = self.users[idx]
+
             recommendations.append({
                 'user_id': user['user_id'],
                 'similarity_score': float(similarities[idx]),
                 'papers': user.get('papers', [])
+
             })
 
         return recommendations
