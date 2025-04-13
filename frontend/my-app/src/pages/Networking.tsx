@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import axios from 'axios';
 
 interface ResearchItem {
   title: string;
@@ -7,7 +8,7 @@ interface ResearchItem {
 }
 
 interface Researcher {
-  id: string;
+  user_id: string;
   email: string;
   name: string;
   affiliation?: string;
@@ -18,15 +19,20 @@ interface Researcher {
   current_interests: string[];
   ongoing_research: ResearchItem[];
   past_research: ResearchItem[];
+  papers?: { title: string }[];
 }
 
 export function Networking() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedResearcher, setSelectedResearcher] = useState<number | null>(null);
+  const [selectedSearchResult, setSelectedSearchResult] = useState<number | null>(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState<Researcher[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const researchers: Researcher[] = [
     {
-      id: "550e8400-e29b-41d4-a716-446655440000",
+      user_id: "550e8400-e29b-41d4-a716-446655440000",
       email: "kimresearch@snu.ac.kr",
       name: "김연구",
       affiliation: "서울대학교 의과대학",
@@ -61,7 +67,7 @@ export function Networking() {
       ]
     },
     {
-      id: "550e8400-e29b-41d4-a716-446655440001",
+      user_id: "550e8400-e29b-41d4-a716-446655440001",
       email: "lee.bio@kaist.ac.kr",
       name: "이바이오",
       affiliation: "KAIST 생명과학과",
@@ -95,7 +101,7 @@ export function Networking() {
       ]
     },
     {
-      id: "550e8400-e29b-41d4-a716-446655440002",
+      user_id: "550e8400-e29b-41d4-a716-446655440002",
       email: "park.health@yonsei.ac.kr",
       name: "박헬스",
       affiliation: "연세대학교 의공학과",
@@ -193,6 +199,34 @@ export function Networking() {
     </div>
   );
 
+  const handleSearch = async () => {
+    if (!searchQuery.trim()) return;
+    
+    setIsLoading(true);
+    try {
+      const response = await axios.get(`http://localhost:8000/api/v1/search?query=${encodeURIComponent(searchQuery)}`);
+      console.log('🔍 검색 쿼리:', searchQuery);
+      console.log('📦 받은 검색 결과:', response.data);
+      console.log('📊 검색 결과 개수:', response.data.length);
+      if (response.data.length > 0) {
+        console.log('📑 첫 번째 결과 상세:', {
+          'User ID': response.data[0].user_id,
+          '이름': response.data[0].name,
+          '소속': response.data[0].affiliation,
+          '논문 수': response.data[0].papers?.length || 0,
+          '첫 번째 논문 제목': response.data[0].papers?.[0]?.title || '없음'
+        });
+      }
+      setSearchResults(response.data);
+    } catch (error) {
+      console.error('❌ 검색 중 오류가 발생했습니다:', error);
+      // 에러 발생 시 더미 데이터 사용
+      setSearchResults(researchers);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Sub Header */}
@@ -209,18 +243,154 @@ export function Networking() {
           <div className="relative">
             <input
               type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
               placeholder="관심있는 연구를 검색해보세요"
               className="w-full p-4 pr-16 border rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
-            <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white w-12 h-12 rounded-full hover:bg-blue-700 text-lg font-semibold transition-colors flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
+            <button 
+              onClick={handleSearch}
+              disabled={isLoading}
+              className={`absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white w-12 h-12 rounded-full hover:bg-blue-700 text-lg font-semibold transition-colors flex items-center justify-center ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
+            >
+              {isLoading ? (
+                <svg className="animate-spin h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              )}
             </button>
           </div>
-          <div className="w-full border-t border-gray-300 mt-12"></div>
           
-          {/* Dropdown Section */}
+          {/* Search Results Section */}
+          {searchResults.length > 0 && (
+            <div className="mt-8">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">검색 결과</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {searchResults.map((researcher, index) => (
+                  <div 
+                    key={`search-${researcher.user_id}`} 
+                    className={`bg-white p-6 rounded-lg border shadow-sm hover:shadow-md transition-all cursor-pointer
+                      ${selectedSearchResult === index ? 'fixed inset-4 md:inset-20 z-50 overflow-y-auto bg-white rounded-lg' : ''}`}
+                    onClick={() => setSelectedSearchResult(selectedSearchResult === index ? null : index)}
+                  >
+                    <div className="flex items-center mb-4 relative">
+                      {researcher.profile_image_url ? (
+                        <img 
+                          src={researcher.profile_image_url} 
+                          alt={researcher.name}
+                          className="w-12 h-12 rounded-full object-cover"
+                        />
+                      ) : (
+                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+                          {getInitials(researcher.name)}
+                        </div>
+                      )}
+                      <div className="ml-4">
+                        <h3 className="font-semibold text-lg">{researcher.name}</h3>
+                        <p className="text-sm text-gray-500">{researcher.affiliation || '소속 미입력'}</p>
+                      </div>
+                      
+                      {selectedSearchResult === index && (
+                        <button 
+                          className="absolute top-0 right-0 text-gray-500 hover:text-gray-700"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSelectedSearchResult(null);
+                          }}
+                        >
+                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                        </button>
+                      )}
+                    </div>
+
+                    {/* Extended Information (only shown when selected) */}
+                    {selectedSearchResult === index ? (
+                      <div className="mt-6 pt-6 border-t">
+                        <div className="space-y-6">
+                          <div className="space-y-6">
+                            <ResearchSection title="현재 관심있는 연구분야" items={researcher.current_interests} />
+                            <ResearchItemSection title="현재 진행중인 연구분야" researchItems={researcher.ongoing_research} />
+                            <ResearchItemSection title="과거 진행했던 연구분야" researchItems={researcher.past_research} />
+                          </div>
+                          <div className="flex flex-wrap gap-4 justify-center pt-6 border-t">
+                            {researcher.google_scholar_id && (
+                              <a 
+                                href={`https://scholar.google.com/citations?user=${researcher.google_scholar_id}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-blue-600 hover:text-blue-700"
+                              >
+                                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                  <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5 12 0z"/>
+                                </svg>
+                                Google Scholar
+                              </a>
+                            )}
+                            {researcher.linkedin && (
+                              <a 
+                                href={researcher.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-blue-600 hover:text-blue-700"
+                              >
+                                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                LinkedIn
+                              </a>
+                            )}
+                          </div>
+                          <div className="mt-6 flex justify-center">
+                            <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
+                              연구자와 대화하기
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    ) : (
+                      <>
+                        {researcher.papers && (
+                          <div className="mt-4">
+                            <h4 className="font-medium text-gray-700 mb-2">연구 논문</h4>
+                            <ul className="space-y-2">
+                              {researcher.papers.slice(0, 2).map((paper, idx) => (
+                                <li key={idx} className="text-sm text-gray-600">
+                                  • {paper.title}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                        <div className="mt-4 flex justify-end">
+                          <button className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                            자세히 보기 →
+                          </button>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Overlay when search result is selected */}
+          {selectedSearchResult !== null && (
+            <div 
+              className="fixed inset-0 bg-black bg-opacity-50 z-40"
+              onClick={() => setSelectedSearchResult(null)}
+            />
+          )}
+
+          {/* Original Researchers Section */}
           <div className="mt-8">
             <div className="flex items-center justify-between mb-4">
               <span className="text-lg text-gray-700">나와 비슷한 연구를 하는 연구자들을 만나보세요</span>
@@ -244,9 +414,9 @@ export function Networking() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                 {researchers.map((researcher, index) => (
                   <div 
-                    key={researcher.id} 
+                    key={researcher.user_id} 
                     className={`bg-white p-6 rounded-lg border shadow-sm hover:shadow-md transition-all cursor-pointer
-                      ${selectedResearcher === index ? 'fixed inset-4 md:inset-20 z-50 overflow-y-auto' : ''}`}
+                      ${selectedResearcher === index ? 'fixed inset-4 md:inset-20 z-50 overflow-y-auto bg-white' : ''}`}
                     onClick={() => setSelectedResearcher(selectedResearcher === index ? null : index)}
                   >
                     <div className="flex items-center mb-4 relative">

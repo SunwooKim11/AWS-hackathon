@@ -17,7 +17,7 @@ class Recommender:
         """사용자 데이터 로드"""
         try:
             current_dir = os.path.dirname(os.path.abspath(__file__))
-            data_path = os.path.join(current_dir, '../data/users.json')
+            data_path = os.path.join(current_dir, '../data/bio_research_nested.json')
             print(f"Loading data from: {data_path}")  # 디버깅용
             
             with open(data_path, 'r', encoding='utf-8') as f:
@@ -37,8 +37,24 @@ class Recommender:
         # 각 사용자의 프로필을 하나의 문자열로 결합
         user_profiles = []
         for user in self.users:
-            profile = f"{user.get('abstract', '')} {' '.join(user.get('equipment', []))} {' '.join(user.get('reagents', []))}"
-            user_profiles.append(profile)
+            # 사용자의 모든 논문 정보를 결합
+            profile_text = ""
+            for paper in user.get("papers", []):
+                profile_text += f"{paper.get('title', '')} {paper.get('abstract', '')} "
+                profile_text += f"{' '.join(paper.get('equipments', []))} "
+                profile_text += f"{' '.join(paper.get('reagents', []))} "
+            
+            # 빈 문자열이 아닌 경우에만 추가
+            if profile_text.strip():
+                user_profiles.append(profile_text)
+            else:
+                # 빈 프로필인 경우 기본 텍스트 추가
+                user_profiles.append(f"user_{user.get('user_id', 'unknown')}")
+
+        # 최소 하나의 프로필이 있는지 확인
+        if not user_profiles:
+            print("No valid user profiles found")
+            return
 
         # TF-IDF 기반 벡터화
         self.vectorizer = TfidfVectorizer(max_features=self.vector_dim)
@@ -71,12 +87,11 @@ class Recommender:
         # 추천 결과 생성
         recommendations = []
         for idx in similar_indices:
+            user = self.users[idx]
             recommendations.append({
-                'user_id': self.users[idx]['user_id'],
+                'user_id': user['user_id'],
                 'similarity_score': float(similarities[idx]),
-                'abstract': self.users[idx].get('abstract', ''),
-                'equipment': self.users[idx].get('equipment', []),
-                'reagents': self.users[idx].get('reagents', [])
+                'papers': user.get('papers', [])
             })
 
         return recommendations
