@@ -37,20 +37,26 @@ class Recommender:
         # 각 사용자의 프로필을 하나의 문자열로 결합
         user_profiles = []
         for user in self.users:
-            # 사용자의 논문들에서 텍스트 추출
-            papers_text = ""
-            if "papers" in user:
-                for paper in user["papers"]:
-                    # 논문 제목과 초록 추가
-                    papers_text += f"{paper.get('title', '')} {paper.get('abstract', '')} "
-                    # 장비와 시약 추가
-                    papers_text += f"{' '.join(paper.get('equipments', []))} {' '.join(paper.get('reagents', []))} "
+
+            # 사용자의 모든 논문 정보를 결합
+            profile_text = ""
+            for paper in user.get("papers", []):
+                profile_text += f"{paper.get('title', '')} {paper.get('abstract', '')} "
+                profile_text += f"{' '.join(paper.get('equipments', []))} "
+                profile_text += f"{' '.join(paper.get('reagents', []))} "
             
-            # 사용자 프로필이 비어있지 않은지 확인
-            if not papers_text.strip():
-                papers_text = "default profile"  # 빈 프로필이 있으면 기본값 사용
-                
-            user_profiles.append(papers_text)
+            # 빈 문자열이 아닌 경우에만 추가
+            if profile_text.strip():
+                user_profiles.append(profile_text)
+            else:
+                # 빈 프로필인 경우 기본 텍스트 추가
+                user_profiles.append(f"user_{user.get('user_id', 'unknown')}")
+
+        # 최소 하나의 프로필이 있는지 확인
+        if not user_profiles:
+            print("No valid user profiles found")
+            return
+
 
         # TF-IDF 기반 벡터화
         self.vectorizer = TfidfVectorizer(max_features=self.vector_dim)
@@ -84,28 +90,12 @@ class Recommender:
         recommendations = []
         for idx in similar_indices:
             user = self.users[idx]
-            
-            # 논문 정보 모으기
-            papers = user.get('papers', [])
-            all_equipments = []
-            all_reagents = []
-            abstracts = []
-            
-            for paper in papers[:3]:  # 최대 3개 논문 정보만 포함
-                abstracts.append(paper.get('abstract', ''))
-                all_equipments.extend(paper.get('equipments', []))
-                all_reagents.extend(paper.get('reagents', []))
-            
-            # 중복 제거
-            all_equipments = list(set(all_equipments))
-            all_reagents = list(set(all_reagents))
-            
+
             recommendations.append({
                 'user_id': user['user_id'],
                 'similarity_score': float(similarities[idx]),
-                'abstracts': abstracts,
-                'equipments': all_equipments,
-                'reagents': all_reagents
+                'papers': user.get('papers', [])
+
             })
 
         return recommendations
