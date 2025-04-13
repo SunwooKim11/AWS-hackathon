@@ -18,6 +18,10 @@ PROMPT = '''
 Please refer to the following paper and summarize what topics are covered and what the purpose is. In particular, focus on the detailed explanation of the experiment and organize the following in the JSON format about what equipment and reagents were used for the experiment so that the researchers can refer to when participating in an experiment similar to or related to the study.
     title:
     overview:
+    journal:
+    authors:
+    year:
+    doi:
     equipments:
     reagents:
 '''
@@ -33,9 +37,28 @@ functions = [
                     "type": "string",
                     "description": "Title of the paper"
                 },
-                "overview": {
+                "abstract": {
                     "type": "string",
                     "description": "Based on abstract, overview of the research"
+                },
+                "journal": {
+                    "type": "string",
+                    "description": "Journal name where the paper was published"
+                },
+                "authors": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of authors of the paper"
+                },
+                "year": {
+                    "type": "integer",
+                    "description": "Publication year of the paper"
+                },
+                "doi": {
+                    "type": "string",
+                    "description": "Digital Object Identifier (DOI) of the paper"
                 },
                 "equipments": {
                     "type": "array",
@@ -52,7 +75,7 @@ functions = [
                     "description": "Reagents used for experiments"
                 },
             },
-            "required": ["title", "overview", "equipments", "reagents"]
+            "required": ["title", "abstract", "journal", "authors", "equipments", "reagents"]
         }
     }
 ]
