@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.api.v1.endpoints import user, tool, paper, interest, current_study, recommend
+from backend.api.v1.endpoints import user, tool, paper, interest, current_study, recommend, profile
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -25,6 +25,7 @@ app.include_router(paper.router, prefix="/api/v1")
 app.include_router(interest.router, prefix="/api/v1")
 app.include_router(current_study.router, prefix="/api/v1")
 app.include_router(recommend.router, prefix="/api/v1")
+app.include_router(profile.router, prefix="/api/v1")
 
 @app.get("/")
 def read_root():

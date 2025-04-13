@@ -9,6 +9,7 @@ class UserBase(BaseModel):
     google_scholar_id: str
     profile_image_url: Optional[str] = None
     email: str
+    vector_embedding_id: Optional[UUID] = None
 
 class UserCreate(UserBase):
     user_id: str  # 사용자가 지정한 ID
@@ -17,6 +18,7 @@ class UserUpdate(BaseModel):
     name: Optional[str] = None
     affiliation: Optional[str] = None
     profile_image_url: Optional[str] = None
+    vector_embedding_id: Optional[UUID] = None
 
 class User(UserBase):
     id: UUID  # 데이터베이스 기본 키 (내부 사용)
